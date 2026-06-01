@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ESTACAO_DELETADO_POR" directorySegmentName="seg_0" id="A27A5771-FDAC-1EFE-B7B0-08F8EEF02C63">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>889E0E12-C171-5954-F3F5-02C21BDDAD69</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>675E6E4A-5BDA-BA42-E6F1-094CBC60E803</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E24CEF34-9926-2F99-2044-379D1C649432</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>94AFCFAA-404B-3399-EB23-9A6CC4A13B01</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

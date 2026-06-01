@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54732589-3EF7-05EB-5352-2B88C5D77E12" name="TB AMANAJE AVALIACAO RISCO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultados calculados pela API para risco ambiental por região e categoria.]]></commentInRDBMS>
+<generatorID>1E48EA72-646B-8796-E1A8-E49FD5B19E5A</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID AVALIACAO" id="2618D5D3-E960-95A8-8CD1-EA5E551FF041">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da avaliação de risco.]]></commentInRDBMS>
+<generatorID>299C0A7D-6C97-502B-B5EA-428E2489CEEF</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO" id="53E0D8AC-FB91-B3AD-09CD-E5FBB97BE76F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada avaliada.]]></commentInRDBMS>
+<generatorID>5941C2A6-BC15-3CEB-9287-04B23977DC7B</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>00C2FFEC-486E-BF21-D852-755AF539C305</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID LEITURA" id="E26EDA46-B6F1-9552-5728-7EBD503D38E8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Leitura IoT usada na avaliação, quando aplicável.]]></commentInRDBMS>
+<generatorID>5941C2A6-BC15-3CEB-9287-04B23977DC7B</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3BFB2114-ED50-36C7-6461-C16F09C2608C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID OBSERVACAO" id="73F26165-BF03-936D-8EA6-D19AF81678ED">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observação climática externa usada na avaliação, quando aplicável.]]></commentInRDBMS>
+<generatorID>A06159FB-FED0-8306-AFED-D5B205889D4F</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>457D9AF6-3DD4-8F3D-CD21-54F08609B857</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP RISCO" id="00F1B57A-BCCE-470C-7636-3ABE68FDA028">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria do risco ambiental avaliado.]]></commentInRDBMS>
+<generatorID>D969C3B8-1826-5CE3-BAAF-CBB4693C26EA</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR SCORE RISCO" id="A8776460-EBFC-AFC3-4940-FDCBC4FA2AD8">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Score de risco calculado entre 0 e 100.]]></commentInRDBMS>
+<generatorID>8AE37CB5-C597-FDC5-8444-7E8986980E2F</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>99181667-91C5-5369-A467-E4FB7855873E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP NIVEL RISCO" id="0E7F291A-0A8E-5A2B-33CB-3C605CB1049D">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível do risco: BAIXO, MODERADO, ALTO ou CRITICO.]]></commentInRDBMS>
+<generatorID>E209EE13-050D-03EC-CF86-BA807E109727</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2FDEC3E-FCDF-CA8F-D721-2C4680688F95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS MOTIVO" id="0D527C63-6A64-3271-21B7-08CAB61C81BE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Justificativa resumida para o score e nível de risco.]]></commentInRDBMS>
+<generatorID>91DE5622-EB3F-7C9D-B5EE-D8246A719690</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2C4DF55A-2032-65F6-A9BC-0E39ED01C495</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT AVALIACAO" id="901A6C25-28E9-7D0A-F4DE-3535B8E8A15F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da avaliação de risco.]]></commentInRDBMS>
+<generatorID>8E5212B6-AF65-A4BE-2D0B-7F45276A2112</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO3" id="B16C8CCB-5AD1-4783-63F8-00B2EF81CCE4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada avaliada.]]></commentInRDBMS>
+<generatorID>A06159FB-FED0-8306-AFED-D5B205889D4F</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DBBC6B1B-20F6-8458-361E-9CF72FCC8DB1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO1" id="B6E8BC54-44FA-05DE-76A5-91B836603CA3">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada avaliada.]]></commentInRDBMS>
+<generatorID>DF4542C0-5C55-B41E-9715-054E4E74B040</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<referedAttribute>A87D3335-0632-3A37-9F20-D23BA01D0E0C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1030A2B8-B752-471A-B17B-53CEEFCFE71D" name="PK AMANAJE AVALIACAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>8F159895-F70C-AF0A-4C25-3E1B07B13800</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2618D5D3-E960-95A8-8CD1-EA5E551FF041</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0FDE4057-9E90-2868-B819-4F704EFEFD1F" name="UQ AMANAJE AVALIACAO ID REGIAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>8300CFAF-8EC0-35BA-54EB-ECA670EC27B1</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>2618D5D3-E960-95A8-8CD1-EA5E551FF041</attributeRef>
+<attributeRef>53E0D8AC-FB91-B3AD-09CD-E5FBB97BE76F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

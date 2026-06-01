@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="627010CA-58C2-33B4-1403-48F456179E11" name="TB_AMANAJE_LOG_ERRO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro técnico de erros ocorridos em cargas, blocos PL/SQL, integrações e processamentos do banco.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>6447665B-B0D8-1F65-5008-8CDFEF13FAF5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOG_ERRO" id="E1E4286B-4DD4-76A3-D05C-F6A382127ED3">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do log de erro.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>FBE1EFE2-BC42-2544-103A-9B071546E44F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_PROCESSAMENTO" id="A5F18389-CEEB-C602-3B6F-1DF92BABD427">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Processamento relacionado ao erro, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>2ED66828-6140-09C8-CB19-B235A84B8D65</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2EF614B-E8A3-2F67-70BA-5B9ED6E31E14" referredColumn="ED032540-198B-E992-F419-101C8C31B31D"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="1ADB124C-D02F-D6D9-BC78-4DF093F8E843">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário associado ao erro, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>7513EB37-A77F-99C8-1105-78645577B122</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F1B9CBC-6ECF-01ED-829C-D0070C2CD33D" referredColumn="408A487D-3D11-799F-E977-D766CC5BF847"/>
+</associations>
+</Column>
+<Column name="NM_ORIGEM" id="BAA3CC37-7F5B-C844-C6D9-861D4BBC3A06">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem do erro, como DML, PL/SQL, API, integração externa ou rotina de carga.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>F7FB76C1-521D-6CFD-AA81-FCC8BEE3AD74</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4274BDFC-3373-605E-BFA3-75F6992A6899</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_OBJETO" id="F0201C25-A534-B13B-3A1C-7F25419BFE8B">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do objeto ou bloco relacionado ao erro.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>E5D6DCAC-87AA-2E09-2240-7B8406B4095B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4274BDFC-3373-605E-BFA3-75F6992A6899</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_ERRO" id="2B822119-D901-5296-5771-754E340B3476">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código técnico do erro, quando disponível.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>C39813F8-C185-8804-5456-2D1AD8EDD17B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ERRO" id="BF404E57-B8A1-C636-27FD-339F1DA48317">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição técnica do erro ocorrido.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>A9C90595-9C5F-D008-F3AE-74EEC3A04699</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F345BBF-E86A-EEB3-F89E-C163C1CFF1DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMANDO" id="7E6CC029-8FE8-6B20-E702-98CC625E45AB">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comando, etapa ou instrução relacionada ao erro, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>E576E1F7-EC36-B451-E2CB-23F533AFD2DB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE78573-4C3D-D753-CCB8-7160C9ED7D61</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ERRO" id="6A6B46A3-2C76-9361-3996-8F55C58C8290">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de registro do erro.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>EA11A743-A621-37B0-2562-9457FB4B42AF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FA22086-760B-AB0A-2AAF-C2294330A420" name="PK_AMANAJE_LOG_ERRO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>DE20A384-41F1-3AF3-27F9-799E161FBB8B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1E4286B-4DD4-76A3-D05C-F6A382127ED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76068536-D580-3B77-327F-69C457D554EF" name="IX_AMANAJE_LOG_ERRO_PROCESSAMENTO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>D9B739F8-0CD2-DD01-0C57-4B0935280CFF</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F18389-CEEB-C602-3B6F-1DF92BABD427"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCA0119F-DFE4-DA28-C202-59A19082C649" name="IX_AMANAJE_LOG_ERRO_USUARIO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>461142C3-11E4-2814-FB10-390487C226E9</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ADB124C-D02F-D6D9-BC78-4DF093F8E843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B33A9A6-C352-E1A7-0A81-86D2CED75E8B" name="IX_AMANAJE_LOG_ERRO_DATA">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>0C8107AC-7E3E-503E-5D87-FE83CB663A90</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A6B46A3-2C76-9361-3996-8F55C58C8290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78754C3A-C3B9-517B-BA27-4E54220F1EBD" name="FK_LOG_ERRO_PROCESSAMENTO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5F18389-CEEB-C602-3B6F-1DF92BABD427"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D45BB9E-46EE-6BB5-124B-518608BB25C0" name="FK_LOG_ERRO_USUARIO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ADB124C-D02F-D6D9-BC78-4DF093F8E843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

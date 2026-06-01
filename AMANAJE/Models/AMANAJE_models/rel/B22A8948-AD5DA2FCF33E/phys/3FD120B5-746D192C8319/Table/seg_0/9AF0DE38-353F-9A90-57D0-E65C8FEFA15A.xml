@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_LEITURA_IOT" directorySegmentName="seg_0" id="9AF0DE38-353F-9A90-57D0-E65C8FEFA15A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_LEITURA" id="0BC942D8-8D5C-E865-8A5D-5949E3580EAC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_REGIAO" id="384E1EE5-730C-3BDB-6E7D-F7741986D926">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_MOTIVO_INVALIDACAO" id="41355E70-8546-99D5-8311-35C28A2BCA7F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_PM25" id="4DD2F133-63C2-C6E8-5D4D-E77EB6DB91B2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_NIVEL_AGUA_PCT" id="7ADEC0F0-BDD0-6590-4333-1DB8E23334BE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ESTACAO" id="89694C0C-B27F-D52F-6570-08530E9967F4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_RECEBIDO_EM" id="8F766B5D-6882-BAB2-93C0-F4BEE4DA73E7">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NR_PRESSAO_HPA" id="8F90177F-7340-615D-CFA3-1C0043291245">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_DISTANCIA_AGUA_CM" id="9C51D167-E2B1-8FE1-52B0-A1AAD94B80D2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_PM10" id="B1587EFB-A250-3079-616E-F9CD72F51D41">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_INCLINACAO_GRAUS" id="B4241A7B-314F-A916-B921-07C54B11AB0A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_VALIDA" id="B997DE63-2DE0-DBBB-CDAD-E73851417AF9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_LEITURA" id="CDA95F70-E341-479D-563E-2BF9267D2D31">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NR_VIBRACAO" id="D26CD7B1-C69A-8282-20C1-41EC71FEFD59">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LEITURA_REGIAO" id="29D6BE5D-8397-D80B-C7B1-75A83B213186">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LEITURA_DATA" id="3BB75D18-94CF-D3EF-113A-8F7C1E55DFED">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LEITURA_ESTACAO" id="9BC592A7-7D5B-D0C5-26CA-F62E0ACAF849">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LEITURA_VALIDA" id="A9669996-F23E-7C98-22E1-492D06DFFC47">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LEITURA_ESTACAO_REGIAO" id="A3865075-320F-C374-0149-5FB328762AB0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_LEITURA" id="35C6C466-64ED-6457-195A-D5CAB33F124B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_PRESSAO" id="514970AC-FD78-80A3-3D2A-78077C6C7A13">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_INV" id="919E7A17-8EB8-C58D-5D2A-8BEA69FD4162">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_AGUA" id="9DDEE302-4836-846F-63AD-49D19B162674">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_PM25" id="A6198CE1-47AD-F984-24DE-5E28C731B1CD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_VALIDA" id="D932EBC8-970C-5A93-9C68-47EDBF679656">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_LEITURA_PM10" id="DF21A659-119D-2120-425D-1E69C195B6C9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_LEITURA_ID_REGIAO" id="3BE08598-6862-E04B-0BA7-A5F930DF300F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

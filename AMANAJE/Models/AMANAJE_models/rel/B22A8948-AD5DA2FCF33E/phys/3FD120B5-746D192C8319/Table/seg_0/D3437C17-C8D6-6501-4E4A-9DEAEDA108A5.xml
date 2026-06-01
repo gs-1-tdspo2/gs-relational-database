@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_REGIAO_MONITORADA" directorySegmentName="seg_0" id="D3437C17-C8D6-6501-4E4A-9DEAEDA108A5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_CRIADO_EM" id="0F829874-33BF-671A-9919-F85F047CB6B2">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_DELETADO_POR" id="1AB4682C-57DF-33E0-EBD5-4BB7AB7D6E87">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_LATITUDE" id="373E7C96-F20F-8E70-870B-77FC4064B41D">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_DELETADO_EM" id="596381AF-DE78-E213-D7CC-497ECFECA2EA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_MOTIVO_EXCLUSAO" id="5C43BFCA-EDE1-0541-002C-B535402FC90A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_AREA" id="6EEB80F7-9951-2FD7-4007-6172D3CEDA8B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SG_ESTADO" id="8E207727-9220-191C-01CB-6655E4519EBD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_VISIBILIDADE" id="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<defaultValue>&apos;PRIVADA&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NM_REGIAO" id="99D23660-95E1-9135-7C2D-A98261789B04">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_CIDADE" id="9EC4FBF7-1A2A-5602-3245-951877F46BB6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CLIENTE" id="B4E88BA6-1309-D34B-6730-25449B0652CE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_ATIVO" id="C70C2B5F-446C-4F8B-517C-85402E1EAAF0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NR_NIVEL_VULNERABILIDADE" id="D7276120-4D2C-AEF4-9729-0D2DCC4596B6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_LONGITUDE" id="E256468A-D8EF-9D31-90DC-C85B9C166BAB">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_ATUALIZADO_EM" id="F5FB115B-7562-73E5-C9A8-A3CE9A686094">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_REGIAO" id="F93DC423-72F2-4492-6D4B-B95E66D5C79A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_VISIB" id="1B520A43-7DCE-79FA-9CA7-88050E0FA05B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_CLIENTE" id="BFC16ED2-509B-C066-E267-1B5458793A39">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_DEL_POR" id="E6D2763D-2E9B-73EE-64A7-510181E69D11">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_LOCAL" id="EE7CA602-1229-B75E-AE43-E85B3C70AE07">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_DELETADO_POR" id="86AE5D58-6EB0-2F44-A8CE-5EAD3A904DC6">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_CLIENTE" id="EB19631B-44B5-3401-690E-6AAE9F008891">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_REGIAO" id="9DBE7EAF-44C8-7A15-FD6C-9918E30933A0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_DEL" id="1822727A-41A1-837C-667F-C71293FE4AD1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_VISIB" id="44758E69-E6B1-A763-7747-A06E6F954226">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_AREA" id="4BC8BDB0-C8A6-28EF-3172-748E1CEEA705">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_ATIVO" id="665A7D8E-0F9F-A569-A45C-8970F940E4D7">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_LONG" id="90980B65-DBAA-7748-6533-888311C57614">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_LAT" id="D2C94BE5-C1BE-5A2D-A730-58F78312E0E5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_VULN" id="D648EBBC-1F9E-ECEA-71F3-4ED6C7E3985A">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_AMANAJE_REGIAO_ESTADO" id="FD26AB5A-0FC2-5333-3032-8432C577DAF7">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_REGIAO_CLIENTE_NOME" id="42D0D6C0-5A83-0B82-76E4-153344D2EB87">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

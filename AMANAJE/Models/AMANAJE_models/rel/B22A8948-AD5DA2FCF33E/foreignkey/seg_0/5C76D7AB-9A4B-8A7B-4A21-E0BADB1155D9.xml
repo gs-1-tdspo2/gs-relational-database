@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C76D7AB-9A4B-8A7B-4A21-E0BADB1155D9" containerWithKeyObject="1E48EA72-646B-8796-E1A8-E49FD5B19E5A" localFKIndex="CAC30569-5167-58DD-ACA6-72427F48E522" name="FK_AVALIACAO_OBSERVACAO_REGIAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>0C5B07E7-570D-DEC7-BF92-6617DAC7F8CB</importedID>
+<referredTableLongName>TB_AMANAJE_OBSERVACAO_CLIMATICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0DB6256A-CF00-6681-F84F-EAF28B1825A0</referredTableID>
+<keyObject>C607A015-6ECE-E593-8338-4A9C7F55E89E</keyObject>
+<referredKeyID>C607A015-6ECE-E593-8338-4A9C7F55E89E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_OBSERVACAO,ID_REGIAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

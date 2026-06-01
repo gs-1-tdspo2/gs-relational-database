@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="168FA7C1-2D5F-438C-7EC2-BB85E447C1F9" name="TB AMANAJE INDICADOR REGIONAL">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicadores agregados por cidade, estado ou zona de risco, sem exposição de dados privados identificáveis.]]></commentInRDBMS>
+<generatorID>A7F50791-AF93-F055-ADF4-98EBB0D4AC9E</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID INDICADOR" id="0820C580-E019-D045-5FFD-BD3282211C0E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do indicador regional.]]></commentInRDBMS>
+<generatorID>301DB51A-E6D8-14D4-A306-F8914B758EFE</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO" id="4FC3E33E-AC8C-16C2-DE73-358F2C3DAFBC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada relacionada ao indicador, quando houver vínculo direto.]]></commentInRDBMS>
+<generatorID>66E544C7-7539-F3BE-752B-D4C07B493E5B</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A87D3335-0632-3A37-9F20-D23BA01D0E0C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG ESTADO" id="D79FD425-E5CD-DA39-17AE-F79D7DC8425B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da unidade federativa do indicador.]]></commentInRDBMS>
+<generatorID>061CE287-470F-B1AD-D0C6-193776752E95</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F622811E-F845-7655-F820-3B3817504480</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CIDADE" id="96A015A8-8ED4-C1F2-6CDA-77A989D8A16F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cidade agregada no indicador.]]></commentInRDBMS>
+<generatorID>79B3A4DF-E13B-7554-A4C9-6C8318CE300F</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0605C789-3BC3-FA99-D842-903E8253113A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM REGIAO" id="E4A177C0-8769-9060-49D5-2366BEB6CA79">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome agregado da região, quando aplicável.]]></commentInRDBMS>
+<generatorID>AAF08E94-29F7-B0A8-10DB-87C7CFFAE884</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>591B03A1-2FD3-AF7C-9216-A3DEEE4146D1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP RISCO" id="1AD8ADFE-6074-A17B-A5A7-92E0686EFBE4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de risco consolidado no indicador.]]></commentInRDBMS>
+<generatorID>AB102BBA-A3F7-B182-6A6E-22F1C258204C</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR SCORE MEDIO" id="C7B176AA-507B-C971-B80A-FEB2F97E45C5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Score médio calculado para o indicador.]]></commentInRDBMS>
+<generatorID>D9AB7E43-0704-7C42-94AC-43D4270A29E7</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>99181667-91C5-5369-A467-E4FB7855873E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP NIVEL RISCO MEDIO" id="820A4CF9-F286-B6AC-B734-2C0B47F21D4B">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível médio de risco associado ao score médio.]]></commentInRDBMS>
+<generatorID>C8665629-CB9E-5E38-CD0A-DB3A86FA87C8</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2FDEC3E-FCDF-CA8F-D721-2C4680688F95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT ESTACOES" id="E8EA81EB-BCD8-D5C2-4891-CC30E68F67A5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estações consideradas no cálculo.]]></commentInRDBMS>
+<generatorID>2242701A-1E11-D632-33E0-BB86C10D8F7A</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EE1BA77D-D38E-C18A-AEEC-D50033AF2DB8</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT ALERTAS ATIVOS" id="A1D4F872-5A5C-D6EA-4784-4C05BB2471FE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de alertas ativos considerados no cálculo.]]></commentInRDBMS>
+<generatorID>EFE475F4-4C63-CEAD-3AAE-BD5AC5FF94B4</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EE1BA77D-D38E-C18A-AEEC-D50033AF2DB8</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM FONTE CALCULO" id="C106737F-84A7-F585-C125-FEEC0E03FD87">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem ou rotina responsável pelo cálculo do indicador.]]></commentInRDBMS>
+<generatorID>3796F753-8FB2-7C1F-A801-FCE1A236A753</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0605C789-3BC3-FA99-D842-903E8253113A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT CALCULO" id="BC7AF2C1-BFBF-1D1F-583E-95B5BF2D2BC4">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do cálculo do indicador.]]></commentInRDBMS>
+<generatorID>3CD189B3-8371-32E5-B409-76F3317470EB</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05269950-3C3D-9209-2E1C-F0A2F422C978" name="PK AMANAJE INDICADOR">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>6DEEECB3-6BC6-A2AB-0132-A5FEF8740B28</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0820C580-E019-D045-5FFD-BD3282211C0E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

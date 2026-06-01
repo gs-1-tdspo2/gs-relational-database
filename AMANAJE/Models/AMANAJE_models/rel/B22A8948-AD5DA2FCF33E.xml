@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="B22A8948-F977-82D8-A620-AD5DA2FCF33E" mainViewID="5DFADE6F-ECF8-EC1B-C76E-85CEAFC30B0F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:19:10 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>model_ddl.sql</fileName>
+<pathName>/home/lucca/Downloads</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

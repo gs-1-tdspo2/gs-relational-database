@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_LOG_ERRO_PROCESSAMENTO" directorySegmentName="seg_0" id="3E5CE585-7F0E-342F-8AB1-D32C4C02F161">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>D2EF614B-E8A3-2F67-70BA-5B9ED6E31E14</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>8CECFABB-CBC6-3AA4-461B-B5C997A9B4A3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>94F72F6F-35DE-A8D9-3BE4-A9477446A853</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE816AA8-867A-E754-39BA-35F230AB40EB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58B3DE47-5457-8E7D-73E4-F1D39A5780B4" containerWithKeyObject="D33E4662-51FD-EBCF-A0C6-43F7BF9E6346" localFKIndex="73BA7C82-4C02-5806-1953-4E16CB8E162E" name="FK_ALERTA_AVALIACAO_REGIAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>C9AE71E1-300C-6C15-9B32-D2816E4EAE78</importedID>
+<referredTableLongName>TB_AMANAJE_AVALIACAO_RISCO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E48EA72-646B-8796-E1A8-E49FD5B19E5A</referredTableID>
+<keyObject>8300CFAF-8EC0-35BA-54EB-ECA670EC27B1</keyObject>
+<referredKeyID>8300CFAF-8EC0-35BA-54EB-ECA670EC27B1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_AVALIACAO,ID_REGIAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

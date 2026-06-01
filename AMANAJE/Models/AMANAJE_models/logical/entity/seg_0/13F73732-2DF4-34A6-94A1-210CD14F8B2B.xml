@@ -1,0 +1,225 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="13F73732-2DF4-34A6-94A1-210CD14F8B2B" name="TB AMANAJE CLIENTE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Organizações que contratam, operam ou utilizam o serviço de monitoramento climático e ambiental.]]></commentInRDBMS>
+<generatorID>D236EEA1-EE2B-C873-4557-AC4A814A03D4</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CLIENTE" id="574ACF29-4180-A05C-C685-ED00D7F68538">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do cliente.]]></commentInRDBMS>
+<generatorID>475DE2BB-234A-50CF-719E-3E35D0F55D37</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CLIENTE" id="A2DCB28F-C912-2744-8742-41BF885D5966">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da instituição, organização, fazenda, cooperativa ou entidade de pesquisa.]]></commentInRDBMS>
+<generatorID>416C0A52-4A9D-4B05-CB21-927C21E789CD</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>591B03A1-2FD3-AF7C-9216-A3DEEE4146D1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP CLIENTE" id="655AA6F8-8502-F6CC-F50B-AF06B67E0832">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do cliente: GOVERNO_DEFESA_CIVIL, ONG, FAZENDA_PRIVADO, COOPERATIVA ou PESQUISA_UNIVERSIDADE.]]></commentInRDBMS>
+<generatorID>076617DC-132C-B086-7F3B-BF6E65EAB3C8</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR DOCUMENTO" id="BB4E38D3-40C8-1353-D38E-44C033D69741">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Documento institucional do cliente, como CNPJ ou identificador equivalente.]]></commentInRDBMS>
+<generatorID>C4DD7B5A-69BE-0C6D-002B-D403BF538A61</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS EMAIL CONTATO" id="08A62BC2-671C-8B42-FCA3-E2D79013E81E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail principal de contato do cliente.]]></commentInRDBMS>
+<generatorID>3A8FD357-38A5-94F0-C226-1855484F105B</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F56869D4-2861-5ACB-85C6-522AC180A481</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR TELEFONE" id="2A467046-8E57-45AF-76DE-2EC56C4FECD5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone principal de contato do cliente.]]></commentInRDBMS>
+<generatorID>7D9EEEEF-A1AF-F897-ABB1-D2D32325C5DD</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST ATIVO" id="DF7DE342-0AEA-B056-DE5D-E2173B3492E1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica exclusão lógica do cliente: S = ativo, N = inativo.]]></commentInRDBMS>
+<generatorID>C4364224-1253-37B5-5A24-A58CC20358D0</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>AD8C877C-AFAC-F081-0777-CB932A9D2F6B</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT CRIADO EM" id="4D27FE20-734A-D687-46BB-52797E9E2FAF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro.]]></commentInRDBMS>
+<generatorID>9DE663F6-1D1F-7D7F-3BCF-0C824F80DDB0</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT ATUALIZADO EM" id="93E41DAE-C58B-E3F8-FCC7-5829A270BF19">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da última atualização do registro.]]></commentInRDBMS>
+<generatorID>A85A96B3-F3D9-71C5-EBFF-D391C2101A9A</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT DELETADO EM" id="3877F543-8368-E9BA-FC23-B0137A2B42EF">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da exclusão lógica.]]></commentInRDBMS>
+<generatorID>18708DDB-1EA1-8DA0-5481-08CF95F2FAEB</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID DELETADO POR" id="2C46B497-8722-85B1-4D37-06B76FE535FE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do usuário que realizou a exclusão lógica, quando aplicável.]]></commentInRDBMS>
+<generatorID>8B48D101-8DA1-BDED-C292-7ACD2B136B76</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS MOTIVO EXCLUSAO" id="FA756E52-EDE6-133B-EF88-F16EE64C1772">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Justificativa opcional para auditoria da exclusão lógica.]]></commentInRDBMS>
+<generatorID>250D15FE-9ACB-CE3D-6C5F-A985EDA89CD4</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>10CE7427-0127-7E35-24FC-40AD48DA1C0C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FCBED68A-6929-EB93-8621-D2EB1061C2D4" name="PK AMANAJE CLIENTE">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>99A2556C-7248-7834-081B-372ACE86E1EC</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>574ACF29-4180-A05C-C685-ED00D7F68538</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7B9B70C4-93DD-4264-767D-10FE36CF0794" name="UQ AMANAJE CLIENTE DOC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>2302D7B8-2090-35A8-B392-1E75FD3290A1</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>BB4E38D3-40C8-1353-D38E-44C033D69741</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

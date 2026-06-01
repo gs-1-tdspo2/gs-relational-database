@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="94F72F6F-35DE-A8D9-3BE4-A9477446A853" name="TB AMANAJE PROCESSAMENTO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro de execuções e processamentos, como sincronização climática, cálculo de risco, geração de indicadores e rotinas PL/SQL.]]></commentInRDBMS>
+<generatorID>A436E08A-48CC-C0CC-311C-F36F80C8A751</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID PROCESSAMENTO" id="4307E6FF-DB9A-9039-0B6B-B37488C49CD9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do processamento.]]></commentInRDBMS>
+<generatorID>ED032540-198B-E992-F419-101C8C31B31D</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO" id="6405E86C-9B4F-2F01-9B4A-D6754A78B360">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada relacionada ao processamento, quando aplicável.]]></commentInRDBMS>
+<generatorID>D8BC0E59-67BB-41FE-D415-76FC87895630</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A87D3335-0632-3A37-9F20-D23BA01D0E0C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID USUARIO" id="E8F39F3C-5064-E6B0-2A2B-EF0A8890BA28">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável ou associado ao processamento, quando aplicável.]]></commentInRDBMS>
+<generatorID>CC52A14E-B5A9-0835-6E23-97C1D4218D43</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ABF37A62-22C3-D29B-D5F0-B3014C238665</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP PROCESSAMENTO" id="73F99073-80E5-11E7-F9B4-CE06D4C7C689">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de processamento executado pelo sistema.]]></commentInRDBMS>
+<generatorID>C2635A3A-DC6F-E50D-489B-CBBAE39FF670</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15BC7720-C4C1-E99F-8FF5-4E419A94092A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST PROCESSAMENTO" id="6F4F3426-B589-B25E-1B73-02413AF1CDE9">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status atual da execução do processamento.]]></commentInRDBMS>
+<generatorID>9D974555-639F-15EA-8E60-AF3887B0C6E4</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2FDEC3E-FCDF-CA8F-D721-2C4680688F95</domain>
+<defaultValue>&apos;INICIADO&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS ORIGEM" id="561628D1-6587-30FB-5C22-100B9D1D487F">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem do processamento, como API Java, serviço C#, carga DML ou bloco PL/SQL.]]></commentInRDBMS>
+<generatorID>BF5EE269-90C9-06E5-900D-31FED132CA15</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4274BDFC-3373-605E-BFA3-75F6992A6899</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS PARAMETROS" id="38A7E7AD-ADDC-C000-793B-FFC3D4D0F6A7">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parâmetros de entrada usados na execução.]]></commentInRDBMS>
+<generatorID>92C014D9-0C77-1896-9D75-D9588B01705F</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F345BBF-E86A-EEB3-F89E-C163C1CFF1DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS RESULTADO" id="09C42608-7A6E-A920-53F5-CE585D4F3595">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado resumido da execução.]]></commentInRDBMS>
+<generatorID>554EB447-F856-3FD5-6DED-F016B51E4FA1</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F345BBF-E86A-EEB3-F89E-C163C1CFF1DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT INICIO" id="9A3EDFEE-CD0C-A7D8-9014-B73B04F47FA0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de início do processamento.]]></commentInRDBMS>
+<generatorID>6C36BC01-8D9B-F6DF-D86F-473F99EEB91A</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT FIM" id="9510BD1B-2162-1062-70FB-4B41DF85E6FA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de término do processamento.]]></commentInRDBMS>
+<generatorID>B2E676A4-88D5-63BB-15E8-6EA547F78F2D</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8CECFABB-CBC6-3AA4-461B-B5C997A9B4A3" name="PK AMANAJE PROCESSAMENTO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>9991BF49-8FF1-FD42-BEC2-1FEC451AC501</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4307E6FF-DB9A-9039-0B6B-B37488C49CD9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E046AE4-397B-5ACC-3CFE-75FCD764E564" containerWithKeyObject="1E48EA72-646B-8796-E1A8-E49FD5B19E5A" localFKIndex="BE834CCB-7A35-9145-2F8D-40E22A056C33" name="FK_AVALIACAO_LEITURA_REGIAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>B0AFCA9C-1699-4024-EBAA-43C7D3886518</importedID>
+<referredTableLongName>TB_AMANAJE_LEITURA_IOT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9AF0DE38-353F-9A90-57D0-E65C8FEFA15A</referredTableID>
+<keyObject>3BE08598-6862-E04B-0BA7-A5F930DF300F</keyObject>
+<referredKeyID>3BE08598-6862-E04B-0BA7-A5F930DF300F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_LEITURA,ID_REGIAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

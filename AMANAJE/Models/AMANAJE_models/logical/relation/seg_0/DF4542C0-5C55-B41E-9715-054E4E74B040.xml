@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AVALIACAO_REGIAO" directorySegmentName="seg_0" id="DF4542C0-5C55-B41E-9715-054E4E74B040">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>301D20ED-DD61-5763-1A4B-7E8183AB7AF8</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>11FA7CFB-39BC-7D6A-2D10-4174FF216E1C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>22C9E919-7175-9926-6614-236A95A27679</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>54732589-3EF7-05EB-5352-2B88C5D77E12</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

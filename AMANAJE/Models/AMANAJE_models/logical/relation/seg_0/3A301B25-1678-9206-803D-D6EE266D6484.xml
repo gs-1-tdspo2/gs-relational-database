@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_LOG_ESTACAO" directorySegmentName="seg_0" id="3A301B25-1678-9206-803D-D6EE266D6484">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>8F572545-D684-0477-8C55-387245D6FF53</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>473AABDD-8DB1-5E7A-AE46-A0E29D38D65A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>94AFCFAA-404B-3399-EB23-9A6CC4A13B01</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AB5E4438-D6AF-EE25-40C0-E24454BFA762</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

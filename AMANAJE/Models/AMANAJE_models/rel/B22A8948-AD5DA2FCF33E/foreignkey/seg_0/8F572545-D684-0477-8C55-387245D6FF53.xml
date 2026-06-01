@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F572545-D684-0477-8C55-387245D6FF53" containerWithKeyObject="C539B51A-6D08-7F74-C712-7AD94C11ED8B" localFKIndex="CCCEE142-94B8-C03A-8C03-6CDD8DD13D05" name="FK_LOG_ESTACAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>274FAC8D-784D-9590-F6FA-F45E9A0D68E3</importedID>
+<referredTableLongName>TB_AMANAJE_ESTACAO_IOT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A0C9824A-6575-4F7D-3FCE-CAEDD60E1774</referredTableID>
+<keyObject>DD9E3782-CFA0-9398-04B2-3E8E2B646DCD</keyObject>
+<referredKeyID>DD9E3782-CFA0-9398-04B2-3E8E2B646DCD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ESTACAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

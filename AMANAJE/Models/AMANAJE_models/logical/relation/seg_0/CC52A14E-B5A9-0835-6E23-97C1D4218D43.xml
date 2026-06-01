@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PROCESSAMENTO_USUARIO" directorySegmentName="seg_0" id="CC52A14E-B5A9-0835-6E23-97C1D4218D43">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>7B5153E3-676C-6F03-0F36-CCEAE87B0538</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>675E6E4A-5BDA-BA42-E6F1-094CBC60E803</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E24CEF34-9926-2F99-2044-379D1C649432</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>94F72F6F-35DE-A8D9-3BE4-A9477446A853</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

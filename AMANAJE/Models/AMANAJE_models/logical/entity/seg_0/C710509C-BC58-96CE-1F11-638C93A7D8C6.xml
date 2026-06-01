@@ -1,0 +1,226 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C710509C-BC58-96CE-1F11-638C93A7D8C6" name="TB AMANAJE OBSERVACAO CLIMATICA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dados climáticos públicos normalizados por integração externa e associados a uma região monitorada.]]></commentInRDBMS>
+<generatorID>0DB6256A-CF00-6681-F84F-EAF28B1825A0</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID OBSERVACAO" id="457D9AF6-3DD4-8F3D-CD21-54F08609B857">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da observação climática externa.]]></commentInRDBMS>
+<generatorID>C39FA2D2-25FB-F4F3-4114-D6C9836410E7</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID REGIAO" id="DBBC6B1B-20F6-8458-361E-9CF72FCC8DB1">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada relacionada à observação climática.]]></commentInRDBMS>
+<generatorID>4FE58F84-C31D-EAC7-EC74-47F6F01BAF24</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<referedAttribute>A87D3335-0632-3A37-9F20-D23BA01D0E0C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM FONTE" id="AF2CE485-E6D6-F518-8E22-B90ADBA0B402">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fonte pública ou serviço usado para obter os dados climáticos.]]></commentInRDBMS>
+<generatorID>313890B3-0D73-8770-4EEE-5A1E8A7D9A2A</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4B5D77E2-7B76-0BC3-0DBA-AE9B424A6F00</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR TEMPERATURA C" id="739B969C-F24E-218B-A385-3A0F8A992414">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura em graus Celsius.]]></commentInRDBMS>
+<generatorID>A85BF891-3E0D-3C4D-FC73-6E420E13635E</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>878AD864-6FAE-E4CF-B5A0-FE625F82F4E4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR UMIDADE PCT" id="25C165E4-FD6E-198A-8B91-391324CCDCE0">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Umidade relativa do ar em percentual.]]></commentInRDBMS>
+<generatorID>ADE616EB-8109-92DA-8272-0ABE32D56D70</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>99181667-91C5-5369-A467-E4FB7855873E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR PRECIPITACAO MM" id="EEE1FF49-6DF6-64A8-CF97-1C45003870FD">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precipitação em milímetros.]]></commentInRDBMS>
+<generatorID>2FC13184-2537-7455-81F8-4E31C4B9F754</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5EDA79E3-F2D5-564C-9FF4-2A2C3F972812</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR VENTO KMH" id="66F60FD0-0CAF-45D4-B73C-5DE5326A08AC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade do vento em km/h.]]></commentInRDBMS>
+<generatorID>DF611441-CBF6-09C0-2CF5-64F5D868AF60</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5EDA79E3-F2D5-564C-9FF4-2A2C3F972812</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR PRESSAO HPA" id="C4FF7193-642F-2D75-DF9B-5E80B452FD0E">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pressão atmosférica externa em hPa.]]></commentInRDBMS>
+<generatorID>13D447D9-73D9-1098-85F1-5900AAE74CC3</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5EDA79E3-F2D5-564C-9FF4-2A2C3F972812</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR RADIACAO SOLAR" id="870D34D8-21FE-85D9-4C87-8D3BF2D7D4BA">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Radiação solar informada pela fonte externa.]]></commentInRDBMS>
+<generatorID>DB5E8E1D-5D80-B81D-2019-6C914C42F9E6</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>45733FDC-AA4B-4F2F-08C2-0FA0150BB0D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR INDICE UV" id="B4D8B5C5-80AC-E288-E525-0D9AF2F02652">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Índice ultravioleta informado pela fonte externa.]]></commentInRDBMS>
+<generatorID>97C6DA14-62D6-2574-90D8-F6B8B64D5A4E</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>99181667-91C5-5369-A467-E4FB7855873E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT OBSERVACAO" id="2A829D19-D0F2-790E-DCE5-A67665C1E644">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora da observação climática externa.]]></commentInRDBMS>
+<generatorID>C2EA55C8-0D3C-3652-53B1-FAE28F47C447</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT CRIADO EM" id="B838D3F9-2A01-DA4D-63F9-04D2538B09EC">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de criação do registro no banco.]]></commentInRDBMS>
+<generatorID>C4A96383-A8C2-5B0A-9D39-B855190CC832</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E5E1D759-F380-8DFF-D615-D11C7796A0C4" name="PK AMANAJE OBSERVACAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>F11B8AE9-ACED-70D2-6F06-B5077BBC7076</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>457D9AF6-3DD4-8F3D-CD21-54F08609B857</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1380DE38-D3A3-8801-F674-A6A0B0E95889" name="UQ AMANAJE OBSERVACAO ID REGIAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>C607A015-6ECE-E593-8338-4A9C7F55E89E</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>457D9AF6-3DD4-8F3D-CD21-54F08609B857</attributeRef>
+<attributeRef>DBBC6B1B-20F6-8458-361E-9CF72FCC8DB1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,265 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A436E08A-48CC-C0CC-311C-F36F80C8A751" name="TB_AMANAJE_PROCESSAMENTO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Registro de execuções e processamentos, como sincronização climática, cálculo de risco, geração de indicadores e rotinas PL/SQL.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>6E4F28FA-9BE4-5828-5BC0-32302E7826FE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROCESSAMENTO" id="ED032540-198B-E992-F419-101C8C31B31D">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do processamento.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>5267C271-7082-1333-8895-3DAD9061610E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_REGIAO" id="802B12B8-D350-DA75-747B-C9B50AA0D39D">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada relacionada ao processamento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>466E1811-8FAE-043A-DABC-3B2C1579B6BF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE2D53E7-BA91-0342-F948-A3ED8DF69475" referredColumn="F93DC423-72F2-4492-6D4B-B95E66D5C79A"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="FD5D7C4E-1651-A12B-9DE2-12C9AE42FFFD">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável ou associado ao processamento, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>1E7FA6E8-73AD-92B1-B81B-B1F87FBAF6C2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B5153E3-676C-6F03-0F36-CCEAE87B0538" referredColumn="408A487D-3D11-799F-E977-D766CC5BF847"/>
+</associations>
+</Column>
+<Column name="TP_PROCESSAMENTO" id="C2635A3A-DC6F-E50D-489B-CBBAE39FF670">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de processamento executado pelo sistema.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>5D114EE1-97CA-E3FF-1AD2-8A9B1AD600F1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15BC7720-C4C1-E99F-8FF5-4E419A94092A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_PROCESSAMENTO" id="9D974555-639F-15EA-8E60-AF3887B0C6E4">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status atual da execução do processamento.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>913116F3-F4EA-C053-CB34-E9F20774AAA4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2FDEC3E-FCDF-CA8F-D721-2C4680688F95</domain>
+<defaultValue>&apos;INICIADO&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ORIGEM" id="BF5EE269-90C9-06E5-900D-31FED132CA15">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem do processamento, como API Java, serviço C#, carga DML ou bloco PL/SQL.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>9B4BED24-C34F-C0B3-57E2-CF2575AB74E4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4274BDFC-3373-605E-BFA3-75F6992A6899</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PARAMETROS" id="92C014D9-0C77-1896-9D75-D9588B01705F">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Parâmetros de entrada usados na execução.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>198C470F-4965-E8A8-C1E7-29640E312368</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F345BBF-E86A-EEB3-F89E-C163C1CFF1DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_RESULTADO" id="554EB447-F856-3FD5-6DED-F016B51E4FA1">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Resultado resumido da execução.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>09B273EA-E5EC-8C07-13C4-729CD9647EC6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0F345BBF-E86A-EEB3-F89E-C163C1CFF1DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="6C36BC01-8D9B-F6DF-D86F-473F99EEB91A">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de início do processamento.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>1A4A5DB4-ED75-ED35-72AB-8BBF6ED25646</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIM" id="B2E676A4-88D5-63BB-15E8-6EA547F78F2D">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de término do processamento.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>0025AEC7-1DBA-DA50-2B8F-FE1F1E19D811</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9991BF49-8FF1-FD42-BEC2-1FEC451AC501" name="PK_AMANAJE_PROCESSAMENTO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>C1946CC2-B1F2-360D-142D-F7101203928F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED032540-198B-E992-F419-101C8C31B31D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4AC051C-7E0D-6D37-5CE6-E9875D81E669" name="IX_AMANAJE_PROCESSAMENTO_REGIAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>FC95E48C-EAA1-59A9-0A26-FC20CD3BDEFF</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802B12B8-D350-DA75-747B-C9B50AA0D39D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E670DA09-573A-70FC-DAE3-05B5614EA54D" name="IX_AMANAJE_PROCESSAMENTO_USUARIO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>395F7225-AD6F-7E52-90DD-3FFEEF3089E2</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD5D7C4E-1651-A12B-9DE2-12C9AE42FFFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C69F8B8-1B08-0E77-73A8-FB057EDFF1B1" name="IX_AMANAJE_PROCESSAMENTO_STATUS">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>805D161F-E640-1821-EBDC-7F58E2748520</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D974555-639F-15EA-8E60-AF3887B0C6E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8C69E69-37CC-589D-DE0E-8BAC2ED82D94" name="IX_AMANAJE_PROCESSAMENTO_TIPO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>40B3F5E0-8F26-BA71-F5D9-C66D841B6B5E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2635A3A-DC6F-E50D-489B-CBBAE39FF670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC" name="FK_PROCESSAMENTO_REGIAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802B12B8-D350-DA75-747B-C9B50AA0D39D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FB4D722-F584-5039-BA0C-4A7943ACC2C5" name="FK_PROCESSAMENTO_USUARIO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD5D7C4E-1651-A12B-9DE2-12C9AE42FFFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_TIPO" directorySegmentName="seg_0" id="08026465-65A6-0EB3-AD5D-9252919C406A">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>39829B15-E4EF-9D36-E774-45B92F674686</importedID>
+<rule><![CDATA[TP_PROCESSAMENTO IN ('SINCRONIZACAO_CLIMATICA', 'CALCULO_RISCO', 'GERACAO_INDICADOR', 'GERACAO_ALERTA', 'CARGA_DADOS', 'ROTINA_PL_SQL', 'OUTRO')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_STATUS" directorySegmentName="seg_0" id="9633869F-3085-5E14-B9CD-CD2D6FD0D54D">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>63D4AA09-B503-C066-6E43-BCB7D030009E</importedID>
+<rule><![CDATA[ST_PROCESSAMENTO IN ('INICIADO', 'EM_EXECUCAO', 'CONCLUIDO', 'FALHOU', 'CANCELADO')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_FIM" directorySegmentName="seg_0" id="ED5F7DDA-09DC-A41A-7C88-D69D15C7D00F">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>BD2DD5E1-0AA3-0A57-CE00-9E986AA02474</importedID>
+<rule><![CDATA[DT_FIM IS NULL OR DT_FIM >= DT_INICIO]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

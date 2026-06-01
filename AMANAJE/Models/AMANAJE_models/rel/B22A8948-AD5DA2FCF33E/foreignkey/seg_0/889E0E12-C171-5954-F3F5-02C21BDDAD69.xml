@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="889E0E12-C171-5954-F3F5-02C21BDDAD69" containerWithKeyObject="A0C9824A-6575-4F7D-3FCE-CAEDD60E1774" localFKIndex="AF564AF5-EF80-B36A-91EC-A804C396ED3E" name="FK_ESTACAO_DELETADO_POR">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>9C9B4998-793B-AC51-201E-B12EDFDB5756</importedID>
+<referredTableLongName>TB_AMANAJE_USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89050C6E-D373-A9DA-ACCA-7B05DF6733EC</referredTableID>
+<keyObject>C01C7D9B-A09E-1F8A-0A12-E42666647B5A</keyObject>
+<referredKeyID>C01C7D9B-A09E-1F8A-0A12-E42666647B5A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_USUARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

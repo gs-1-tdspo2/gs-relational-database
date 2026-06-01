@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_LOG_ERRO_USUARIO" directorySegmentName="seg_0" id="2286BFF2-FEB4-A3B1-FCAE-F701B4E99822">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:51 UTC</createdTime>
+<generatorID>2F1B9CBC-6ECF-01ED-829C-D0070C2CD33D</generatorID>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<engineerTo>
+<item key="B22A8948-F977-82D8-A620-AD5DA2FCF33E" value="true"/>
+</engineerTo>
+<sourcePk>675E6E4A-5BDA-BA42-E6F1-094CBC60E803</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E24CEF34-9926-2F99-2044-379D1C649432</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE816AA8-867A-E754-39BA-35F230AB40EB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

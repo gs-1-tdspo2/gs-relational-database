@@ -1,0 +1,299 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7F50791-AF93-F055-ADF4-98EBB0D4AC9E" name="TB_AMANAJE_INDICADOR_REGIONAL">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicadores agregados por cidade, estado ou zona de risco, sem exposição de dados privados identificáveis.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>19795F2F-00C2-1376-2E93-DC4503178D88</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_INDICADOR" id="301DB51A-E6D8-14D4-A306-F8914B758EFE">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do indicador regional.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>86A3B720-7264-0052-152C-DCE861651A6B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_REGIAO" id="0B5048F1-04B2-D38D-7901-DF01F9F60D44">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Região monitorada relacionada ao indicador, quando houver vínculo direto.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>6AFEB25A-1A66-8EC8-ABCD-9435B1A8AF95</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D1BAED0-9FE9-F3FB-F8FC-86F132DA7F7A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E27C672-EA5A-0451-AEAD-B5AD3452507C" referredColumn="F93DC423-72F2-4492-6D4B-B95E66D5C79A"/>
+</associations>
+</Column>
+<Column name="SG_ESTADO" id="061CE287-470F-B1AD-D0C6-193776752E95">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da unidade federativa do indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>955D1168-67BD-150F-8321-620E156502E8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F622811E-F845-7655-F820-3B3817504480</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="79B3A4DF-E13B-7554-A4C9-6C8318CE300F">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cidade agregada no indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>6B46C6D2-2FA3-ADD1-3EAB-BB26E88B917D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0605C789-3BC3-FA99-D842-903E8253113A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_REGIAO" id="AAF08E94-29F7-B0A8-10DB-87C7CFFAE884">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome agregado da região, quando aplicável.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>EEF8FE50-F5DB-EBC1-A69F-21160A8972AC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>591B03A1-2FD3-AF7C-9216-A3DEEE4146D1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_RISCO" id="AB102BBA-A3F7-B182-6A6E-22F1C258204C">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de risco consolidado no indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>F9A8152C-73A3-0774-7226-B34697AEC0EA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>699A6994-360D-25B4-A84C-BB4B6B253582</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SCORE_MEDIO" id="D9AB7E43-0704-7C42-94AC-43D4270A29E7">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Score médio calculado para o indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>0E66B49A-9AE4-FCFF-8066-EE88B57C16B7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>99181667-91C5-5369-A467-E4FB7855873E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_NIVEL_RISCO_MEDIO" id="C8665629-CB9E-5E38-CD0A-DB3A86FA87C8">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nível médio de risco associado ao score médio.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>707975AF-30A7-46D8-6471-DCFA07D2DF6E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2FDEC3E-FCDF-CA8F-D721-2C4680688F95</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_ESTACOES" id="2242701A-1E11-D632-33E0-BB86C10D8F7A">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estações consideradas no cálculo.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>B5B5B670-C8A6-8DA6-4AB3-3084C99ED0E1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EE1BA77D-D38E-C18A-AEEC-D50033AF2DB8</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_ALERTAS_ATIVOS" id="EFE475F4-4C63-CEAD-3AAE-BD5AC5FF94B4">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de alertas ativos considerados no cálculo.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>B5A0ACD6-2BE3-46EC-49AE-D9C7B8468FAE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EE1BA77D-D38E-C18A-AEEC-D50033AF2DB8</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_FONTE_CALCULO" id="3796F753-8FB2-7C1F-A801-FCE1A236A753">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Origem ou rotina responsável pelo cálculo do indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>041FB342-4992-F650-2B09-A4CF48A54200</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0605C789-3BC3-FA99-D842-903E8253113A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CALCULO" id="3CD189B3-8371-32E5-B409-76F3317470EB">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do cálculo do indicador.]]></commentInRDBMS>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>E7B6AAEB-81E1-BA38-4780-97B1E4540063</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>FF41384A-7B15-3856-220C-97B310681F7F</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DEEECB3-6BC6-A2AB-0132-A5FEF8740B28" name="PK_AMANAJE_INDICADOR">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>44F91A99-3ED1-126E-5268-6483286FE86C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="301DB51A-E6D8-14D4-A306-F8914B758EFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C41E7C63-66AD-DA99-9D2C-1639DFF07781" name="IX_AMANAJE_INDICADOR_REGIAO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>FB8FDADB-13C3-5E1A-0A6E-59A863FAF17A</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B5048F1-04B2-D38D-7901-DF01F9F60D44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27798E5F-51BB-93CC-85C0-D25862B0262F" name="IX_AMANAJE_INDICADOR_LOCAL">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>95417077-4F1D-45F4-4025-601A5A9491E3</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="061CE287-470F-B1AD-D0C6-193776752E95"/>
+<colUsage columnID="79B3A4DF-E13B-7554-A4C9-6C8318CE300F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A4014A9-0442-2F21-9C7E-643C59E10914" name="IX_AMANAJE_INDICADOR_TIPO">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>21B39ABC-B124-85FE-E9B4-93532D4CA53E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB102BBA-A3F7-B182-6A6E-22F1C258204C"/>
+<colUsage columnID="C8665629-CB9E-5E38-CD0A-DB3A86FA87C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CCB08DC-7A9D-AEC4-8D08-136C6D5D8499" name="FK_INDICADOR_REGIAO">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B5048F1-04B2-D38D-7901-DF01F9F60D44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_ESTADO" directorySegmentName="seg_0" id="C74BB15E-25AD-7E02-407F-3CD0EAD2BB07">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>85F46C5E-CF70-BEED-6793-D16CDBAA7C00</importedID>
+<rule><![CDATA[REGEXP_LIKE(SG_ESTADO, '^[A-Z]{2}$')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_TIPO" directorySegmentName="seg_0" id="CAB1A588-ACEB-58AC-C8EA-964DC2FC035F">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>8BAF375F-0D32-B2D1-5D5F-5396C01E6B8A</importedID>
+<rule><![CDATA[TP_RISCO IN ('ENCHENTE', 'DESLIZAMENTO', 'TEMPESTADE', 'QUALIDADE_AR')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_SCORE" directorySegmentName="seg_0" id="D83C15CB-1918-07FD-1C24-5438F232A589">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>744FA518-659E-9CEB-43E6-7A6CBCC0CE24</importedID>
+<rule><![CDATA[NR_SCORE_MEDIO BETWEEN 0 AND 100]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_NIVEL" directorySegmentName="seg_0" id="B3C8DF86-186C-DC70-8E3A-BCC2DFC8145D">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>2063723A-54FE-0D8C-5AC1-3ACB7375ACF7</importedID>
+<rule><![CDATA[TP_NIVEL_RISCO_MEDIO IN ('BAIXO', 'MODERADO', 'ALTO', 'CRITICO')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_EST" directorySegmentName="seg_0" id="085B0143-5718-1D05-7B95-FCF5D665FE62">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>06C1E68B-EAA2-BF52-45DF-AA47C19FE5E8</importedID>
+<rule><![CDATA[QT_ESTACOES >= 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_ALT" directorySegmentName="seg_0" id="C8623C4C-1C0D-60A3-D55E-FE7601C34A72">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>CCDA0B4E-AFA4-F596-A871-47F6E091B08C</importedID>
+<rule><![CDATA[QT_ALERTAS_ATIVOS >= 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_AMANAJE_INDICADOR_SCORE_NIVEL" directorySegmentName="seg_0" id="1A074BF6-B0DB-8C93-064F-179A8DCA8CF3">
+<sourceDDLFile>model_ddl.sql</sourceDDLFile>
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:24:39 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<importedID>FF70884A-F2E3-58A3-D426-04A57368EA12</importedID>
+<rule><![CDATA[(TP_NIVEL_RISCO_MEDIO = 'BAIXO' AND NR_SCORE_MEDIO >= 0 AND NR_SCORE_MEDIO < 25) OR (TP_NIVEL_RISCO_MEDIO = 'MODERADO' AND NR_SCORE_MEDIO >= 25 AND NR_SCORE_MEDIO < 50) OR (TP_NIVEL_RISCO_MEDIO = 'ALTO' AND NR_SCORE_MEDIO >= 50 AND NR_SCORE_MEDIO < 75) OR (TP_NIVEL_RISCO_MEDIO = 'CRITICO' AND NR_SCORE_MEDIO >= 75 AND NR_SCORE_MEDIO <= 100)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

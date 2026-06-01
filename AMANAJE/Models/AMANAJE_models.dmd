@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="AMANAJE_models" id="90FCC3FF-FD65-9F58-D463-1270580FBAA9" version="3.5">
+<createdBy>lucca</createdBy>
+<createdTime>2026-06-01 14:19:06 UTC</createdTime>
+<ownerDesignName>AMANAJE_models</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>90FCC3FF-FD65-9F58-D463-1270580FBAA9</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="A10B4F78-4519-3BD4-2523-AA1B7CFDC86D">
+<designStoragePath>/model_ddl</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
