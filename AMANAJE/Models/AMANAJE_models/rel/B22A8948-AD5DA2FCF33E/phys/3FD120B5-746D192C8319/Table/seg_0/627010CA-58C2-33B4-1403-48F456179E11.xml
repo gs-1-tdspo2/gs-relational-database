@@ -64,13 +64,13 @@
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LOG_ERRO_PROCESSAMENTO" id="76068536-D580-3B77-327F-69C457D554EF">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LOG_ERR_PROCESS" id="76068536-D580-3B77-327F-69C457D554EF">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LOG_ERRO_USUARIO" id="CCA0119F-DFE4-DA28-C202-59A19082C649">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_LOG_ERRO_USU" id="CCA0119F-DFE4-DA28-C202-59A19082C649">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -78,12 +78,12 @@
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOG_ERRO_PROCESSAMENTO" id="78754C3A-C3B9-517B-BA27-4E54220F1EBD">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOG_ERRO_PROCESS" id="78754C3A-C3B9-517B-BA27-4E54220F1EBD">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOG_ERRO_USUARIO" id="7D45BB9E-46EE-6BB5-124B-518608BB25C0">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOG_ERRO_USU" id="7D45BB9E-46EE-6BB5-124B-518608BB25C0">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

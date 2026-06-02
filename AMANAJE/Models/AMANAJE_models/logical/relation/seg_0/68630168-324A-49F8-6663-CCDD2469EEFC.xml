@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ALERTA_DELETADO_POR" directorySegmentName="seg_0" id="68630168-324A-49F8-6663-CCDD2469EEFC">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ALERTA_DEL_POR" directorySegmentName="seg_0" id="68630168-324A-49F8-6663-CCDD2469EEFC">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:51 UTC</createdTime>
 <generatorID>F4418E13-EEBF-E10F-FF35-BE27FFAEF89A</generatorID>

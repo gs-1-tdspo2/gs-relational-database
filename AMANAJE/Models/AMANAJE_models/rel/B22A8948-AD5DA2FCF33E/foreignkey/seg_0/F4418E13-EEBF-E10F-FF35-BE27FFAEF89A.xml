@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F4418E13-EEBF-E10F-FF35-BE27FFAEF89A" containerWithKeyObject="D33E4662-51FD-EBCF-A0C6-43F7BF9E6346" localFKIndex="BAB32038-0E97-D51C-D46B-B39A79F6B31E" name="FK_ALERTA_DELETADO_POR">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F4418E13-EEBF-E10F-FF35-BE27FFAEF89A" containerWithKeyObject="D33E4662-51FD-EBCF-A0C6-43F7BF9E6346" localFKIndex="BAB32038-0E97-D51C-D46B-B39A79F6B31E" name="FK_ALERTA_DEL_POR">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>5F13191A-3B5F-530D-DEE9-A8D6B3B81337</importedID>
-<referredTableLongName>TB_AMANAJE_USUARIO</referredTableLongName>
+<referredTableLongName>TB_AMANAJE_USU</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>89050C6E-D373-A9DA-ACCA-7B05DF6733EC</referredTableID>
 <keyObject>C01C7D9B-A09E-1F8A-0A12-E42666647B5A</keyObject>

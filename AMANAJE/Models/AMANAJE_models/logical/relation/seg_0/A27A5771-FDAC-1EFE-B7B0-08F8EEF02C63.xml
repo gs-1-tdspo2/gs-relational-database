@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ESTACAO_DELETADO_POR" directorySegmentName="seg_0" id="A27A5771-FDAC-1EFE-B7B0-08F8EEF02C63">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EST_DEL_POR" directorySegmentName="seg_0" id="A27A5771-FDAC-1EFE-B7B0-08F8EEF02C63">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:51 UTC</createdTime>
 <generatorID>889E0E12-C171-5954-F3F5-02C21BDDAD69</generatorID>

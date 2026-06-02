@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2EF614B-E8A3-2F67-70BA-5B9ED6E31E14" containerWithKeyObject="627010CA-58C2-33B4-1403-48F456179E11" localFKIndex="78754C3A-C3B9-517B-BA27-4E54220F1EBD" name="FK_LOG_ERRO_PROCESSAMENTO">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2EF614B-E8A3-2F67-70BA-5B9ED6E31E14" containerWithKeyObject="627010CA-58C2-33B4-1403-48F456179E11" localFKIndex="78754C3A-C3B9-517B-BA27-4E54220F1EBD" name="FK_LOG_ERRO_PROCESS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>F6F8CCDC-F7CE-7E3C-4270-C9905F419BC1</importedID>
-<referredTableLongName>TB_AMANAJE_PROCESSAMENTO</referredTableLongName>
+<referredTableLongName>TB_AMANAJE_PROCESS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>A436E08A-48CC-C0CC-311C-F36F80C8A751</referredTableID>
 <keyObject>9991BF49-8FF1-FD42-BEC2-1FEC451AC501</keyObject>

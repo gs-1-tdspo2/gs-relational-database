@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_REGIAO_MONITORADA" directorySegmentName="seg_0" id="D3437C17-C8D6-6501-4E4A-9DEAEDA108A5">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_REGIAO_MONIT" directorySegmentName="seg_0" id="D3437C17-C8D6-6501-4E4A-9DEAEDA108A5">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -15,7 +15,7 @@
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <defaultValue>SYSTIMESTAMP</defaultValue>
 </ColumnProxy>
-<ColumnProxy name="ID_DELETADO_POR" id="1AB4682C-57DF-33E0-EBD5-4BB7AB7D6E87">
+<ColumnProxy name="ID_DEL_POR" id="1AB4682C-57DF-33E0-EBD5-4BB7AB7D6E87">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -25,7 +25,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="DT_DELETADO_EM" id="596381AF-DE78-E213-D7CC-497ECFECA2EA">
+<ColumnProxy name="DT_DEL_EM" id="596381AF-DE78-E213-D7CC-497ECFECA2EA">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -45,7 +45,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="TP_VISIBILIDADE" id="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E">
+<ColumnProxy name="TP_VISIB" id="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -72,7 +72,7 @@
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <defaultValue>&apos;S&apos;</defaultValue>
 </ColumnProxy>
-<ColumnProxy name="NR_NIVEL_VULNERABILIDADE" id="D7276120-4D2C-AEF4-9729-0D2DCC4596B6">
+<ColumnProxy name="NR_NIVEL_VULN" id="D7276120-4D2C-AEF4-9729-0D2DCC4596B6">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -101,7 +101,7 @@
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_CLIENTE" id="BFC16ED2-509B-C066-E267-1B5458793A39">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_REGIAO_CLI" id="BFC16ED2-509B-C066-E267-1B5458793A39">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -121,12 +121,12 @@
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_DELETADO_POR" id="86AE5D58-6EB0-2F44-A8CE-5EAD3A904DC6">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_DEL_POR" id="86AE5D58-6EB0-2F44-A8CE-5EAD3A904DC6">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_CLIENTE" id="EB19631B-44B5-3401-690E-6AAE9F008891">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_REGIAO_CLI" id="EB19631B-44B5-3401-690E-6AAE9F008891">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -191,7 +191,7 @@
 </TableCheckConstraint>
 </tableCheckConstraints>
 <uniqueKeys>
-<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_REGIAO_CLIENTE_NOME" id="42D0D6C0-5A83-0B82-76E4-153344D2EB87">
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_REGIAO_CLI_NOME" id="42D0D6C0-5A83-0B82-76E4-153344D2EB87">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

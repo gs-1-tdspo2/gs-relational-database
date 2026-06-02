@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1887D0E5-FC2D-38E2-A4E2-147FAC784A97" name="TB_AMANAJE_HISTORICO_EVENTO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1887D0E5-FC2D-38E2-A4E2-147FAC784A97" name="TB_AMANAJE_HIST_EVENTO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -124,7 +124,7 @@
 <colUsage columnID="E5058EF0-8309-0BAA-921B-D17DD2C03C2F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="06C001F1-4E88-E744-1EB5-37C02DDF2EF6" name="IX_AMANAJE_HIST_USUARIO">
+<ind_PK_UK id="06C001F1-4E88-E744-1EB5-37C02DDF2EF6" name="IX_AMANAJE_HIST_USU">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -135,7 +135,7 @@
 <colUsage columnID="B689BD2B-8BF5-4937-4F16-C3C860C87D25"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5C6CFD65-6D2C-3C91-0DF2-E43CF5AF827F" name="FK_HIST_USUARIO">
+<ind_PK_UK id="5C6CFD65-6D2C-3C91-0DF2-E43CF5AF827F" name="FK_HIST_USU">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -153,7 +153,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>AB7461AC-B891-7931-B527-09C9ED30A5BF</importedID>
-<rule><![CDATA[TP_ACAO IN ('CRIACAO', 'ATUALIZACAO', 'EXCLUSAO_LOGICA', 'INVALIDACAO', 'AVALIACAO_RISCO', 'GERACAO_ALERTA', 'RESOLUCAO_ALERTA', 'LOGIN', 'INTEGRACAO_EXTERNA', 'OUTRA')]]></rule>
+<rule><![CDATA[TP_ACAO IN ('CRIACAO', 'ATUALIZACAO', 'EXCLUSAO_LOGICA', 'INVAL', 'AVAL_RISCO', 'GERACAO_ALERTA', 'RESOLUCAO_ALERTA', 'LOGIN', 'INTEGRACAO_EXTERNA', 'OUTRA')]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>

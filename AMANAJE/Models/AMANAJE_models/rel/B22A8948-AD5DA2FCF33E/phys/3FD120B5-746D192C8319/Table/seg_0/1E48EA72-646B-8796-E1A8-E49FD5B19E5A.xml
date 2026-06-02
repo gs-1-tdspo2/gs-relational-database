@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_AVALIACAO_RISCO" directorySegmentName="seg_0" id="1E48EA72-646B-8796-E1A8-E49FD5B19E5A">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_AVAL_RISCO" directorySegmentName="seg_0" id="1E48EA72-646B-8796-E1A8-E49FD5B19E5A">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -30,7 +30,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="DT_AVALIACAO" id="8E5212B6-AF65-A4BE-2D0B-7F45276A2112">
+<ColumnProxy name="DT_AVAL" id="8E5212B6-AF65-A4BE-2D0B-7F45276A2112">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -58,25 +58,25 @@
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVALIACAO_TIPO_NIVEL" id="36D0B56E-B048-6173-8495-B19145C18F1D">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVAL_TIPO_NIV" id="36D0B56E-B048-6173-8495-B19145C18F1D">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVALIACAO_REGIAO" id="657D4049-5F1C-E442-6D10-A7E67E72B27D">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVAL_REGIAO" id="657D4049-5F1C-E442-6D10-A7E67E72B27D">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVALIACAO_OBS" id="7D4207CD-20EC-97D8-4A74-1BC20A1BB9A5">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVAL_OBS" id="7D4207CD-20EC-97D8-4A74-1BC20A1BB9A5">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVALIACAO_LEITURA" id="EEE0B4F1-D539-C29A-F2FC-8E78641E65E5">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_AVAL_LEIT" id="EEE0B4F1-D539-C29A-F2FC-8E78641E65E5">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -84,24 +84,24 @@
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVALIACAO_REGIAO" id="0F0B5B9D-2173-BCD3-E747-FF8B026DB37E">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_REGIAO" id="0F0B5B9D-2173-BCD3-E747-FF8B026DB37E">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVALIACAO_LEITURA_REGIAO" id="BE834CCB-7A35-9145-2F8D-40E22A056C33">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_LEIT_REGIAO" id="BE834CCB-7A35-9145-2F8D-40E22A056C33">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVALIACAO_OBSERVACAO_REGIAO" id="CAC30569-5167-58DD-ACA6-72427F48E522">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AVAL_OBS_REGIAO" id="CAC30569-5167-58DD-ACA6-72427F48E522">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_AVALIACAO" id="8F159895-F70C-AF0A-4C25-3E1B07B13800">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_AVAL" id="8F159895-F70C-AF0A-4C25-3E1B07B13800">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -109,31 +109,31 @@
 </PrimaryKey>
 </primaryKeys>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
-<TableCheckConstraint name="CK_AMANAJE_AVALIACAO_TIPO" id="3873561D-B346-3A50-5D60-ADC79822E8D0">
+<TableCheckConstraint name="CK_AMANAJE_AVAL_TIPO" id="3873561D-B346-3A50-5D60-ADC79822E8D0">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_AVALIACAO_SCORE" id="459361AA-0F56-5701-07FC-366D2436DD9A">
+<TableCheckConstraint name="CK_AMANAJE_AVAL_SCORE" id="459361AA-0F56-5701-07FC-366D2436DD9A">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_AVALIACAO_ORIGEM" id="603DBB62-5172-ADD6-79B6-27BA6758245D">
+<TableCheckConstraint name="CK_AMANAJE_AVAL_ORIGEM" id="603DBB62-5172-ADD6-79B6-27BA6758245D">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_AVALIACAO_SCORE_NIVEL" id="7E4446FD-ECBE-941A-C834-379A4B30E758">
+<TableCheckConstraint name="CK_AMANAJE_AVAL_SCORE_NIV" id="7E4446FD-ECBE-941A-C834-379A4B30E758">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_AVALIACAO_NIVEL" id="F579DB74-526A-5BF3-DB53-19C7915E2C24">
+<TableCheckConstraint name="CK_AMANAJE_AVAL_NIVEL" id="F579DB74-526A-5BF3-DB53-19C7915E2C24">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -141,7 +141,7 @@
 </TableCheckConstraint>
 </tableCheckConstraints>
 <uniqueKeys>
-<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_AVALIACAO_ID_REGIAO" id="8300CFAF-8EC0-35BA-54EB-ECA670EC27B1">
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_AVAL_ID_REGIAO" id="8300CFAF-8EC0-35BA-54EB-ECA670EC27B1">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

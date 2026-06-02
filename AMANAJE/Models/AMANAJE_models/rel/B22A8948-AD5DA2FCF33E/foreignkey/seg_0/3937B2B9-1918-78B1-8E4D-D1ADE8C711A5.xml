@@ -5,7 +5,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>5F2EB96A-0A4B-86FA-3026-6C66AA650376</importedID>
-<referredTableLongName>TB_AMANAJE_REGIAO_MONITORADA</referredTableLongName>
+<referredTableLongName>TB_AMANAJE_REGIAO_MONIT</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D3437C17-C8D6-6501-4E4A-9DEAEDA108A5</referredTableID>
 <keyObject>9DBE7EAF-44C8-7A15-FD6C-9918E30933A0</keyObject>

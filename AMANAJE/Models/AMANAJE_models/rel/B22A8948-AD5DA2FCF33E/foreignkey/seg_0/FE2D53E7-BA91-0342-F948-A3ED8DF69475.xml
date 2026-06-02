@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE2D53E7-BA91-0342-F948-A3ED8DF69475" containerWithKeyObject="A436E08A-48CC-C0CC-311C-F36F80C8A751" localFKIndex="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC" name="FK_PROCESSAMENTO_REGIAO">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE2D53E7-BA91-0342-F948-A3ED8DF69475" containerWithKeyObject="A436E08A-48CC-C0CC-311C-F36F80C8A751" localFKIndex="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC" name="FK_PROCESS_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>0B680F55-C532-D1B3-2061-5B63260C6DA2</importedID>
-<referredTableLongName>TB_AMANAJE_REGIAO_MONITORADA</referredTableLongName>
+<referredTableLongName>TB_AMANAJE_REGIAO_MONIT</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>D3437C17-C8D6-6501-4E4A-9DEAEDA108A5</referredTableID>
 <keyObject>9DBE7EAF-44C8-7A15-FD6C-9918E30933A0</keyObject>

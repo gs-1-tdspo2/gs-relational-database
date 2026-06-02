@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ESTACAO_REGIAO" directorySegmentName="seg_0" id="BA48A609-0C7B-CD06-4BC2-7E7B718EC122">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EST_REGIAO" directorySegmentName="seg_0" id="BA48A609-0C7B-CD06-4BC2-7E7B718EC122">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:51 UTC</createdTime>
 <generatorID>2D40B971-3D1F-F048-C1C5-0FB22E17176F</generatorID>

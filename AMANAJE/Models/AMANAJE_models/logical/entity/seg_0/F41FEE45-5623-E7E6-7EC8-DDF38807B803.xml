@@ -210,7 +210,7 @@
 <defaultValue>&apos;S&apos;</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DS MOTIVO INVALIDACAO" id="E9D682FF-5271-C7ED-D5B3-CE9AB1F1726A">
+<Attribute name="DS MOTIVO INVAL" id="E9D682FF-5271-C7ED-D5B3-CE9AB1F1726A">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:51 UTC</createdTime>
 <commentInRDBMS><![CDATA[Motivo da invalidação lógica da leitura, quando aplicável.]]></commentInRDBMS>

@@ -157,7 +157,7 @@
 <colUsage columnID="E1E4286B-4DD4-76A3-D05C-F6A382127ED3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="76068536-D580-3B77-327F-69C457D554EF" name="IX_AMANAJE_LOG_ERRO_PROCESSAMENTO">
+<ind_PK_UK id="76068536-D580-3B77-327F-69C457D554EF" name="IX_AMANAJE_LOG_ERR_PROCESS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -168,7 +168,7 @@
 <colUsage columnID="A5F18389-CEEB-C602-3B6F-1DF92BABD427"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CCA0119F-DFE4-DA28-C202-59A19082C649" name="IX_AMANAJE_LOG_ERRO_USUARIO">
+<ind_PK_UK id="CCA0119F-DFE4-DA28-C202-59A19082C649" name="IX_AMANAJE_LOG_ERRO_USU">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -190,7 +190,7 @@
 <colUsage columnID="6A6B46A3-2C76-9361-3996-8F55C58C8290"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="78754C3A-C3B9-517B-BA27-4E54220F1EBD" name="FK_LOG_ERRO_PROCESSAMENTO">
+<ind_PK_UK id="78754C3A-C3B9-517B-BA27-4E54220F1EBD" name="FK_LOG_ERRO_PROCESS">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -200,7 +200,7 @@
 <colUsage columnID="A5F18389-CEEB-C602-3B6F-1DF92BABD427"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7D45BB9E-46EE-6BB5-124B-518608BB25C0" name="FK_LOG_ERRO_USUARIO">
+<ind_PK_UK id="7D45BB9E-46EE-6BB5-124B-518608BB25C0" name="FK_LOG_ERRO_USU">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

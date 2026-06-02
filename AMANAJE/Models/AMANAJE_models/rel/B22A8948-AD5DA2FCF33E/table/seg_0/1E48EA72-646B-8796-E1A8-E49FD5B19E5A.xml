@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E48EA72-646B-8796-E1A8-E49FD5B19E5A" name="TB_AMANAJE_AVALIACAO_RISCO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E48EA72-646B-8796-E1A8-E49FD5B19E5A" name="TB_AMANAJE_AVAL_RISCO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -130,7 +130,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_AVALIACAO" id="8E5212B6-AF65-A4BE-2D0B-7F45276A2112">
+<Column name="DT_AVAL" id="8E5212B6-AF65-A4BE-2D0B-7F45276A2112">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -146,7 +146,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8F159895-F70C-AF0A-4C25-3E1B07B13800" name="PK_AMANAJE_AVALIACAO">
+<ind_PK_UK id="8F159895-F70C-AF0A-4C25-3E1B07B13800" name="PK_AMANAJE_AVAL">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -159,7 +159,7 @@
 <colUsage columnID="299C0A7D-6C97-502B-B5EA-428E2489CEEF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8300CFAF-8EC0-35BA-54EB-ECA670EC27B1" name="UQ_AMANAJE_AVALIACAO_ID_REGIAO">
+<ind_PK_UK id="8300CFAF-8EC0-35BA-54EB-ECA670EC27B1" name="UQ_AMANAJE_AVAL_ID_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -172,7 +172,7 @@
 <colUsage columnID="854D521E-3E25-9C5F-B1FD-F288EE5716A2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="657D4049-5F1C-E442-6D10-A7E67E72B27D" name="IX_AMANAJE_AVALIACAO_REGIAO">
+<ind_PK_UK id="657D4049-5F1C-E442-6D10-A7E67E72B27D" name="IX_AMANAJE_AVAL_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -183,7 +183,7 @@
 <colUsage columnID="854D521E-3E25-9C5F-B1FD-F288EE5716A2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EEE0B4F1-D539-C29A-F2FC-8E78641E65E5" name="IX_AMANAJE_AVALIACAO_LEITURA">
+<ind_PK_UK id="EEE0B4F1-D539-C29A-F2FC-8E78641E65E5" name="IX_AMANAJE_AVAL_LEIT">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -194,7 +194,7 @@
 <colUsage columnID="E5432DC2-3002-8F4D-5EBB-06664EB6D43F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7D4207CD-20EC-97D8-4A74-1BC20A1BB9A5" name="IX_AMANAJE_AVALIACAO_OBS">
+<ind_PK_UK id="7D4207CD-20EC-97D8-4A74-1BC20A1BB9A5" name="IX_AMANAJE_AVAL_OBS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -205,7 +205,7 @@
 <colUsage columnID="063DD029-05B5-50E9-0464-C319D29A549C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="36D0B56E-B048-6173-8495-B19145C18F1D" name="IX_AMANAJE_AVALIACAO_TIPO_NIVEL">
+<ind_PK_UK id="36D0B56E-B048-6173-8495-B19145C18F1D" name="IX_AMANAJE_AVAL_TIPO_NIV">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -217,7 +217,7 @@
 <colUsage columnID="E209EE13-050D-03EC-CF86-BA807E109727"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BE834CCB-7A35-9145-2F8D-40E22A056C33" name="FK_AVALIACAO_LEITURA_REGIAO">
+<ind_PK_UK id="BE834CCB-7A35-9145-2F8D-40E22A056C33" name="FK_AVAL_LEIT_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -228,7 +228,7 @@
 <colUsage columnID="854D521E-3E25-9C5F-B1FD-F288EE5716A2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CAC30569-5167-58DD-ACA6-72427F48E522" name="FK_AVALIACAO_OBSERVACAO_REGIAO">
+<ind_PK_UK id="CAC30569-5167-58DD-ACA6-72427F48E522" name="FK_AVAL_OBS_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -239,7 +239,7 @@
 <colUsage columnID="854D521E-3E25-9C5F-B1FD-F288EE5716A2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0F0B5B9D-2173-BCD3-E747-FF8B026DB37E" name="FK_AVALIACAO_REGIAO">
+<ind_PK_UK id="0F0B5B9D-2173-BCD3-E747-FF8B026DB37E" name="FK_AVAL_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -251,7 +251,7 @@
 </ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
-<tableCheckConstraint name="CK_AMANAJE_AVALIACAO_TIPO" directorySegmentName="seg_0" id="3873561D-B346-3A50-5D60-ADC79822E8D0">
+<tableCheckConstraint name="CK_AMANAJE_AVAL_TIPO" directorySegmentName="seg_0" id="3873561D-B346-3A50-5D60-ADC79822E8D0">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -259,7 +259,7 @@
 <importedID>0536594A-02BE-2CAD-A6C4-83B85A3FA304</importedID>
 <rule><![CDATA[TP_RISCO IN ('ENCHENTE', 'DESLIZAMENTO', 'TEMPESTADE', 'QUALIDADE_AR')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_AVALIACAO_SCORE" directorySegmentName="seg_0" id="459361AA-0F56-5701-07FC-366D2436DD9A">
+<tableCheckConstraint name="CK_AMANAJE_AVAL_SCORE" directorySegmentName="seg_0" id="459361AA-0F56-5701-07FC-366D2436DD9A">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -267,7 +267,7 @@
 <importedID>47FE8E46-C6CB-4DF2-2E09-F06A4E9E2E10</importedID>
 <rule><![CDATA[NR_SCORE_RISCO BETWEEN 0 AND 100]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_AVALIACAO_NIVEL" directorySegmentName="seg_0" id="F579DB74-526A-5BF3-DB53-19C7915E2C24">
+<tableCheckConstraint name="CK_AMANAJE_AVAL_NIVEL" directorySegmentName="seg_0" id="F579DB74-526A-5BF3-DB53-19C7915E2C24">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -275,7 +275,7 @@
 <importedID>2575FCC9-2171-76DC-35F1-6806F50DF14E</importedID>
 <rule><![CDATA[TP_NIVEL_RISCO IN ('BAIXO', 'MODERADO', 'ALTO', 'CRITICO')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_AVALIACAO_ORIGEM" directorySegmentName="seg_0" id="603DBB62-5172-ADD6-79B6-27BA6758245D">
+<tableCheckConstraint name="CK_AMANAJE_AVAL_ORIGEM" directorySegmentName="seg_0" id="603DBB62-5172-ADD6-79B6-27BA6758245D">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -283,7 +283,7 @@
 <importedID>543DD220-6882-060D-8AB2-B974FCBF3D2E</importedID>
 <rule><![CDATA[ID_LEITURA IS NOT NULL OR ID_OBSERVACAO IS NOT NULL]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_AVALIACAO_SCORE_NIVEL" directorySegmentName="seg_0" id="7E4446FD-ECBE-941A-C834-379A4B30E758">
+<tableCheckConstraint name="CK_AMANAJE_AVAL_SCORE_NIV" directorySegmentName="seg_0" id="7E4446FD-ECBE-941A-C834-379A4B30E758">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>

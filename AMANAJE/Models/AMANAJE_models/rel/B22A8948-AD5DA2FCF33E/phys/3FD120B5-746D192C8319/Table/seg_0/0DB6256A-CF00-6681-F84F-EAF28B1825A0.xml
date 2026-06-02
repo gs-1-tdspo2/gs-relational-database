@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_OBSERVACAO_CLIMATICA" directorySegmentName="seg_0" id="0DB6256A-CF00-6681-F84F-EAF28B1825A0">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_OBS_CLIM" directorySegmentName="seg_0" id="0DB6256A-CF00-6681-F84F-EAF28B1825A0">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -19,7 +19,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="NR_PRECIPITACAO_MM" id="2FC13184-2537-7455-81F8-4E31C4B9F754">
+<ColumnProxy name="NR_PRECIP_MM" id="2FC13184-2537-7455-81F8-4E31C4B9F754">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -44,7 +44,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="DT_OBSERVACAO" id="C2EA55C8-0D3C-3652-53B1-FAE28F47C447">
+<ColumnProxy name="DT_OBS" id="C2EA55C8-0D3C-3652-53B1-FAE28F47C447">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -87,14 +87,14 @@
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OBSERVACAO_REGIAO" id="6ED19492-FD4E-E3ED-2C8B-B5D59964B8CF">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OBS_REGIAO" id="6ED19492-FD4E-E3ED-2C8B-B5D59964B8CF">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_OBSERVACAO" id="F11B8AE9-ACED-70D2-6F06-B5077BBC7076">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_OBS" id="F11B8AE9-ACED-70D2-6F06-B5077BBC7076">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -134,7 +134,7 @@
 </TableCheckConstraint>
 </tableCheckConstraints>
 <uniqueKeys>
-<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_OBSERVACAO_ID_REGIAO" id="C607A015-6ECE-E593-8338-4A9C7F55E89E">
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_AMANAJE_OBS_ID_REGIAO" id="C607A015-6ECE-E593-8338-4A9C7F55E89E">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

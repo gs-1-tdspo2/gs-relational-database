@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_PROCESSAMENTO" directorySegmentName="seg_0" id="A436E08A-48CC-C0CC-311C-F36F80C8A751">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TB_AMANAJE_PROCESS" directorySegmentName="seg_0" id="A436E08A-48CC-C0CC-311C-F36F80C8A751">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -9,7 +9,7 @@
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
-<ColumnProxy name="DS_RESULTADO" id="554EB447-F856-3FD5-6DED-F016B51E4FA1">
+<ColumnProxy name="DS_RESULT" id="554EB447-F856-3FD5-6DED-F016B51E4FA1">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -25,12 +25,12 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="DS_PARAMETROS" id="92C014D9-0C77-1896-9D75-D9588B01705F">
+<ColumnProxy name="DS_PARAM" id="92C014D9-0C77-1896-9D75-D9588B01705F">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="ST_PROCESSAMENTO" id="9D974555-639F-15EA-8E60-AF3887B0C6E4">
+<ColumnProxy name="ST_PROCESS" id="9D974555-639F-15EA-8E60-AF3887B0C6E4">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -46,7 +46,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="TP_PROCESSAMENTO" id="C2635A3A-DC6F-E50D-489B-CBBAE39FF670">
+<ColumnProxy name="TP_PROCESS" id="C2635A3A-DC6F-E50D-489B-CBBAE39FF670">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -64,25 +64,25 @@
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESSAMENTO_STATUS" id="1C69F8B8-1B08-0E77-73A8-FB057EDFF1B1">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESS_STATUS" id="1C69F8B8-1B08-0E77-73A8-FB057EDFF1B1">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESSAMENTO_TIPO" id="B8C69E69-37CC-589D-DE0E-8BAC2ED82D94">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESS_TIPO" id="B8C69E69-37CC-589D-DE0E-8BAC2ED82D94">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESSAMENTO_REGIAO" id="D4AC051C-7E0D-6D37-5CE6-E9875D81E669">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESS_REGIAO" id="D4AC051C-7E0D-6D37-5CE6-E9875D81E669">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <logging></logging>
 </IndexProxy>
-<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESSAMENTO_USUARIO" id="E670DA09-573A-70FC-DAE3-05B5614EA54D">
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AMANAJE_PROCESS_USU" id="E670DA09-573A-70FC-DAE3-05B5614EA54D">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -90,19 +90,19 @@
 </IndexProxy>
 </indexProxies>
 <foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PROCESSAMENTO_USUARIO" id="0FB4D722-F584-5039-BA0C-4A7943ACC2C5">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PROCESS_USU" id="0FB4D722-F584-5039-BA0C-4A7943ACC2C5">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PROCESSAMENTO_REGIAO" id="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC">
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PROCESS_REGIAO" id="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 </ForeignKey>
 </foreignKeys>
 <primaryKeys>
-<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_PROCESSAMENTO" id="9991BF49-8FF1-FD42-BEC2-1FEC451AC501">
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AMANAJE_PROCESS" id="9991BF49-8FF1-FD42-BEC2-1FEC451AC501">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -110,19 +110,19 @@
 </PrimaryKey>
 </primaryKeys>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
-<TableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_TIPO" id="08026465-65A6-0EB3-AD5D-9252919C406A">
+<TableCheckConstraint name="CK_AMANAJE_PROCESS_TIPO" id="08026465-65A6-0EB3-AD5D-9252919C406A">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_STATUS" id="9633869F-3085-5E14-B9CD-CD2D6FD0D54D">
+<TableCheckConstraint name="CK_AMANAJE_PROCESS_STATUS" id="9633869F-3085-5E14-B9CD-CD2D6FD0D54D">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <nameChanged>true</nameChanged>
 </TableCheckConstraint>
-<TableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_FIM" id="ED5F7DDA-09DC-A41A-7C88-D69D15C7D00F">
+<TableCheckConstraint name="CK_AMANAJE_PROCESS_FIM" id="ED5F7DDA-09DC-A41A-7C88-D69D15C7D00F">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

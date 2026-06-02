@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C539B51A-6D08-7F74-C712-7AD94C11ED8B" name="TB_AMANAJE_LOG_STATUS_ESTACAO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C539B51A-6D08-7F74-C712-7AD94C11ED8B" name="TB_AMANAJE_LOG_STATUS_EST">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -114,7 +114,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="868484DB-6C02-1C3D-076E-83EF507D6892" name="PK_AMANAJE_LOG_ESTACAO">
+<ind_PK_UK id="868484DB-6C02-1C3D-076E-83EF507D6892" name="PK_AMANAJE_LOG_EST">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -127,7 +127,7 @@
 <colUsage columnID="7D0BAC11-A188-58FF-5273-E21AFB17C03B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BD7DCC3C-2E9B-90BC-E83D-181130BD43D4" name="IX_AMANAJE_LOG_ESTACAO">
+<ind_PK_UK id="BD7DCC3C-2E9B-90BC-E83D-181130BD43D4" name="IX_AMANAJE_LOG_EST">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -138,7 +138,7 @@
 <colUsage columnID="D759F6D0-D034-881E-1491-DB109AD6C6CA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CCCEE142-94B8-C03A-8C03-6CDD8DD13D05" name="FK_LOG_ESTACAO">
+<ind_PK_UK id="CCCEE142-94B8-C03A-8C03-6CDD8DD13D05" name="FK_LOG_EST">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>

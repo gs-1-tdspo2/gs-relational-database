@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AF0DE38-353F-9A90-57D0-E65C8FEFA15A" name="TB_AMANAJE_LEITURA_IOT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AF0DE38-353F-9A90-57D0-E65C8FEFA15A" name="TB_AMANAJE_LEIT_IOT">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -86,7 +86,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NR_INCLINACAO_GRAUS" id="B4241A7B-314F-A916-B921-07C54B11AB0A">
+<Column name="NR_INCL_GRAUS" id="B4241A7B-314F-A916-B921-07C54B11AB0A">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -156,7 +156,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_LEITURA" id="0BC942D8-8D5C-E865-8A5D-5949E3580EAC">
+<Column name="DT_LEIT" id="0BC942D8-8D5C-E865-8A5D-5949E3580EAC">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -197,7 +197,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_MOTIVO_INVALIDACAO" id="41355E70-8546-99D5-8311-35C28A2BCA7F">
+<Column name="DS_MOTIVO_INVAL" id="41355E70-8546-99D5-8311-35C28A2BCA7F">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -213,7 +213,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="35C6C466-64ED-6457-195A-D5CAB33F124B" name="PK_AMANAJE_LEITURA">
+<ind_PK_UK id="35C6C466-64ED-6457-195A-D5CAB33F124B" name="PK_AMANAJE_LEIT">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -226,7 +226,7 @@
 <colUsage columnID="CDA95F70-E341-479D-563E-2BF9267D2D31"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3BE08598-6862-E04B-0BA7-A5F930DF300F" name="UQ_AMANAJE_LEITURA_ID_REGIAO">
+<ind_PK_UK id="3BE08598-6862-E04B-0BA7-A5F930DF300F" name="UQ_AMANAJE_LEIT_ID_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -239,7 +239,7 @@
 <colUsage columnID="384E1EE5-730C-3BDB-6E7D-F7741986D926"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9BC592A7-7D5B-D0C5-26CA-F62E0ACAF849" name="IX_AMANAJE_LEITURA_ESTACAO">
+<ind_PK_UK id="9BC592A7-7D5B-D0C5-26CA-F62E0ACAF849" name="IX_AMANAJE_LEIT_EST">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -250,7 +250,7 @@
 <colUsage columnID="89694C0C-B27F-D52F-6570-08530E9967F4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="29D6BE5D-8397-D80B-C7B1-75A83B213186" name="IX_AMANAJE_LEITURA_REGIAO">
+<ind_PK_UK id="29D6BE5D-8397-D80B-C7B1-75A83B213186" name="IX_AMANAJE_LEIT_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -261,7 +261,7 @@
 <colUsage columnID="384E1EE5-730C-3BDB-6E7D-F7741986D926"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3BB75D18-94CF-D3EF-113A-8F7C1E55DFED" name="IX_AMANAJE_LEITURA_DATA">
+<ind_PK_UK id="3BB75D18-94CF-D3EF-113A-8F7C1E55DFED" name="IX_AMANAJE_LEIT_DATA">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -272,7 +272,7 @@
 <colUsage columnID="0BC942D8-8D5C-E865-8A5D-5949E3580EAC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A9669996-F23E-7C98-22E1-492D06DFFC47" name="IX_AMANAJE_LEITURA_VALIDA">
+<ind_PK_UK id="A9669996-F23E-7C98-22E1-492D06DFFC47" name="IX_AMANAJE_LEIT_VALIDA">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -283,7 +283,7 @@
 <colUsage columnID="B997DE63-2DE0-DBBB-CDAD-E73851417AF9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A3865075-320F-C374-0149-5FB328762AB0" name="FK_LEITURA_ESTACAO_REGIAO">
+<ind_PK_UK id="A3865075-320F-C374-0149-5FB328762AB0" name="FK_LEIT_EST_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -296,7 +296,7 @@
 </ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_AGUA" directorySegmentName="seg_0" id="9DDEE302-4836-846F-63AD-49D19B162674">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_AGUA" directorySegmentName="seg_0" id="9DDEE302-4836-846F-63AD-49D19B162674">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -304,7 +304,7 @@
 <importedID>AEC5B239-23B1-A2F5-576F-81A5A81FD4D5</importedID>
 <rule><![CDATA[NR_NIVEL_AGUA_PCT IS NULL OR NR_NIVEL_AGUA_PCT BETWEEN 0 AND 100]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_PRESSAO" directorySegmentName="seg_0" id="514970AC-FD78-80A3-3D2A-78077C6C7A13">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_PRESSAO" directorySegmentName="seg_0" id="514970AC-FD78-80A3-3D2A-78077C6C7A13">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -312,7 +312,7 @@
 <importedID>AEA23F62-9A83-4396-7E39-540941C840D9</importedID>
 <rule><![CDATA[NR_PRESSAO_HPA IS NULL OR NR_PRESSAO_HPA BETWEEN 800 AND 1200]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_PM25" directorySegmentName="seg_0" id="A6198CE1-47AD-F984-24DE-5E28C731B1CD">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_PM25" directorySegmentName="seg_0" id="A6198CE1-47AD-F984-24DE-5E28C731B1CD">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -320,7 +320,7 @@
 <importedID>156A786C-099C-2D6B-7B7D-E1CE47B6DC58</importedID>
 <rule><![CDATA[NR_PM25 IS NULL OR NR_PM25 >= 0]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_PM10" directorySegmentName="seg_0" id="DF21A659-119D-2120-425D-1E69C195B6C9">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_PM10" directorySegmentName="seg_0" id="DF21A659-119D-2120-425D-1E69C195B6C9">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -328,7 +328,7 @@
 <importedID>0C42E116-8594-D92C-2F8B-B49179DDF35A</importedID>
 <rule><![CDATA[NR_PM10 IS NULL OR NR_PM10 >= 0]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_VALIDA" directorySegmentName="seg_0" id="D932EBC8-970C-5A93-9C68-47EDBF679656">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_VALIDA" directorySegmentName="seg_0" id="D932EBC8-970C-5A93-9C68-47EDBF679656">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -336,13 +336,13 @@
 <importedID>CACDBE83-D987-2E3A-3CF5-5A6E491CA156</importedID>
 <rule><![CDATA[ST_VALIDA IN ('S', 'N')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_LEITURA_INV" directorySegmentName="seg_0" id="919E7A17-8EB8-C58D-5D2A-8BEA69FD4162">
+<tableCheckConstraint name="CK_AMANAJE_LEIT_INV" directorySegmentName="seg_0" id="919E7A17-8EB8-C58D-5D2A-8BEA69FD4162">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>65AC5203-8B24-BDF9-319A-9E95C38E4E6A</importedID>
-<rule><![CDATA[(ST_VALIDA = 'S' AND DS_MOTIVO_INVALIDACAO IS NULL) OR (ST_VALIDA = 'N')]]></rule>
+<rule><![CDATA[(ST_VALIDA = 'S' AND DS_MOTIVO_INVAL IS NULL) OR (ST_VALIDA = 'N')]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>

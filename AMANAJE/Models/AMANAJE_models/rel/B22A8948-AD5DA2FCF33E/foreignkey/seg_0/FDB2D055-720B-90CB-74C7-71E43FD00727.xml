@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDB2D055-720B-90CB-74C7-71E43FD00727" containerWithKeyObject="89050C6E-D373-A9DA-ACCA-7B05DF6733EC" localFKIndex="8305D8F0-8FB5-E81B-9686-36283A3D65CD" name="FK_USUARIO_DELETADO_POR">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDB2D055-720B-90CB-74C7-71E43FD00727" containerWithKeyObject="89050C6E-D373-A9DA-ACCA-7B05DF6733EC" localFKIndex="8305D8F0-8FB5-E81B-9686-36283A3D65CD" name="FK_USU_DEL_POR">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>39DDC3ED-C90A-16E0-2DF8-992047C6DB36</importedID>
-<referredTableLongName>TB_AMANAJE_USUARIO</referredTableLongName>
+<referredTableLongName>TB_AMANAJE_USU</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>89050C6E-D373-A9DA-ACCA-7B05DF6733EC</referredTableID>
 <keyObject>C01C7D9B-A09E-1F8A-0A12-E42666647B5A</keyObject>

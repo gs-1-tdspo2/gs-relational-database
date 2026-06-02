@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A436E08A-48CC-C0CC-311C-F36F80C8A751" name="TB_AMANAJE_PROCESSAMENTO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A436E08A-48CC-C0CC-311C-F36F80C8A751" name="TB_AMANAJE_PROCESS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -60,7 +60,7 @@
 <colAssociation fkAssociation="7B5153E3-676C-6F03-0F36-CCEAE87B0538" referredColumn="408A487D-3D11-799F-E977-D766CC5BF847"/>
 </associations>
 </Column>
-<Column name="TP_PROCESSAMENTO" id="C2635A3A-DC6F-E50D-489B-CBBAE39FF670">
+<Column name="TP_PROCESS" id="C2635A3A-DC6F-E50D-489B-CBBAE39FF670">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -73,7 +73,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ST_PROCESSAMENTO" id="9D974555-639F-15EA-8E60-AF3887B0C6E4">
+<Column name="ST_PROCESS" id="9D974555-639F-15EA-8E60-AF3887B0C6E4">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -100,7 +100,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_PARAMETROS" id="92C014D9-0C77-1896-9D75-D9588B01705F">
+<Column name="DS_PARAM" id="92C014D9-0C77-1896-9D75-D9588B01705F">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -114,7 +114,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_RESULTADO" id="554EB447-F856-3FD5-6DED-F016B51E4FA1">
+<Column name="DS_RESULT" id="554EB447-F856-3FD5-6DED-F016B51E4FA1">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -158,7 +158,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9991BF49-8FF1-FD42-BEC2-1FEC451AC501" name="PK_AMANAJE_PROCESSAMENTO">
+<ind_PK_UK id="9991BF49-8FF1-FD42-BEC2-1FEC451AC501" name="PK_AMANAJE_PROCESS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -171,7 +171,7 @@
 <colUsage columnID="ED032540-198B-E992-F419-101C8C31B31D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D4AC051C-7E0D-6D37-5CE6-E9875D81E669" name="IX_AMANAJE_PROCESSAMENTO_REGIAO">
+<ind_PK_UK id="D4AC051C-7E0D-6D37-5CE6-E9875D81E669" name="IX_AMANAJE_PROCESS_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -182,7 +182,7 @@
 <colUsage columnID="802B12B8-D350-DA75-747B-C9B50AA0D39D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E670DA09-573A-70FC-DAE3-05B5614EA54D" name="IX_AMANAJE_PROCESSAMENTO_USUARIO">
+<ind_PK_UK id="E670DA09-573A-70FC-DAE3-05B5614EA54D" name="IX_AMANAJE_PROCESS_USU">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -193,7 +193,7 @@
 <colUsage columnID="FD5D7C4E-1651-A12B-9DE2-12C9AE42FFFD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1C69F8B8-1B08-0E77-73A8-FB057EDFF1B1" name="IX_AMANAJE_PROCESSAMENTO_STATUS">
+<ind_PK_UK id="1C69F8B8-1B08-0E77-73A8-FB057EDFF1B1" name="IX_AMANAJE_PROCESS_STATUS">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -204,7 +204,7 @@
 <colUsage columnID="9D974555-639F-15EA-8E60-AF3887B0C6E4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B8C69E69-37CC-589D-DE0E-8BAC2ED82D94" name="IX_AMANAJE_PROCESSAMENTO_TIPO">
+<ind_PK_UK id="B8C69E69-37CC-589D-DE0E-8BAC2ED82D94" name="IX_AMANAJE_PROCESS_TIPO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -215,7 +215,7 @@
 <colUsage columnID="C2635A3A-DC6F-E50D-489B-CBBAE39FF670"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC" name="FK_PROCESSAMENTO_REGIAO">
+<ind_PK_UK id="C00F86F5-2D15-97BA-D911-9ECA7C08BBFC" name="FK_PROCESS_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -225,7 +225,7 @@
 <colUsage columnID="802B12B8-D350-DA75-747B-C9B50AA0D39D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0FB4D722-F584-5039-BA0C-4A7943ACC2C5" name="FK_PROCESSAMENTO_USUARIO">
+<ind_PK_UK id="0FB4D722-F584-5039-BA0C-4A7943ACC2C5" name="FK_PROCESS_USU">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -237,23 +237,23 @@
 </ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
-<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_TIPO" directorySegmentName="seg_0" id="08026465-65A6-0EB3-AD5D-9252919C406A">
+<tableCheckConstraint name="CK_AMANAJE_PROCESS_TIPO" directorySegmentName="seg_0" id="08026465-65A6-0EB3-AD5D-9252919C406A">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>39829B15-E4EF-9D36-E774-45B92F674686</importedID>
-<rule><![CDATA[TP_PROCESSAMENTO IN ('SINCRONIZACAO_CLIMATICA', 'CALCULO_RISCO', 'GERACAO_INDICADOR', 'GERACAO_ALERTA', 'CARGA_DADOS', 'ROTINA_PL_SQL', 'OUTRO')]]></rule>
+<rule><![CDATA[TP_PROCESS IN ('SINCRONIZACAO_CLIM', 'CALCULO_RISCO', 'GERACAO_IND', 'GERACAO_ALERTA', 'CARGA_DADOS', 'ROTINA_PL_SQL', 'OUTRO')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_STATUS" directorySegmentName="seg_0" id="9633869F-3085-5E14-B9CD-CD2D6FD0D54D">
+<tableCheckConstraint name="CK_AMANAJE_PROCESS_STATUS" directorySegmentName="seg_0" id="9633869F-3085-5E14-B9CD-CD2D6FD0D54D">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>63D4AA09-B503-C066-6E43-BCB7D030009E</importedID>
-<rule><![CDATA[ST_PROCESSAMENTO IN ('INICIADO', 'EM_EXECUCAO', 'CONCLUIDO', 'FALHOU', 'CANCELADO')]]></rule>
+<rule><![CDATA[ST_PROCESS IN ('INICIADO', 'EM_EXECUCAO', 'CONCLUIDO', 'FALHOU', 'CANCELADO')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_PROCESSAMENTO_FIM" directorySegmentName="seg_0" id="ED5F7DDA-09DC-A41A-7C88-D69D15C7D00F">
+<tableCheckConstraint name="CK_AMANAJE_PROCESS_FIM" directorySegmentName="seg_0" id="ED5F7DDA-09DC-A41A-7C88-D69D15C7D00F">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>

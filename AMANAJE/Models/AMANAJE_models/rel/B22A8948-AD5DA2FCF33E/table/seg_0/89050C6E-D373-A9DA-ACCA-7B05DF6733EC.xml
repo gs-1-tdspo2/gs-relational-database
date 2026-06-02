@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89050C6E-D373-A9DA-ACCA-7B05DF6733EC" name="TB_AMANAJE_USUARIO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89050C6E-D373-A9DA-ACCA-7B05DF6733EC" name="TB_AMANAJE_USU">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -42,7 +42,7 @@
 <colAssociation fkAssociation="A760C437-CBE2-6EC2-92DC-1448515D38F2" referredColumn="475DE2BB-234A-50CF-719E-3E35D0F55D37"/>
 </associations>
 </Column>
-<Column name="NM_USUARIO" id="84111C11-B69E-F993-008B-4A2491089E4F">
+<Column name="NM_USU" id="84111C11-B69E-F993-008B-4A2491089E4F">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -94,7 +94,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ST_USUARIO" id="7A34A3C1-6808-A139-64B9-D4D71036BF87">
+<Column name="ST_USU" id="7A34A3C1-6808-A139-64B9-D4D71036BF87">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -150,7 +150,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_DELETADO_EM" id="B8680F1C-BD9B-A22D-0F86-D83D71225E5B">
+<Column name="DT_DEL_EM" id="B8680F1C-BD9B-A22D-0F86-D83D71225E5B">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -164,7 +164,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_DELETADO_POR" id="F839A458-E7C0-8ECD-3DA5-FC22DD617AE9">
+<Column name="ID_DEL_POR" id="F839A458-E7C0-8ECD-3DA5-FC22DD617AE9">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -197,7 +197,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C01C7D9B-A09E-1F8A-0A12-E42666647B5A" name="PK_AMANAJE_USUARIO">
+<ind_PK_UK id="C01C7D9B-A09E-1F8A-0A12-E42666647B5A" name="PK_AMANAJE_USU">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -210,7 +210,7 @@
 <colUsage columnID="408A487D-3D11-799F-E977-D766CC5BF847"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C70B02A0-30FA-4AAA-17A3-D8B7812B5BE2" name="UQ_AMANAJE_USUARIO_EMAIL">
+<ind_PK_UK id="C70B02A0-30FA-4AAA-17A3-D8B7812B5BE2" name="UQ_AMANAJE_USU_EMAIL">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -222,7 +222,7 @@
 <colUsage columnID="02B633FB-A6C5-3A80-836C-B7AA452B9EBB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="542E5B2E-8E61-970D-5478-38A55B8A19F1" name="IX_AMANAJE_USUARIO_CLIENTE">
+<ind_PK_UK id="542E5B2E-8E61-970D-5478-38A55B8A19F1" name="IX_AMANAJE_USU_CLI">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -233,7 +233,7 @@
 <colUsage columnID="F0283D93-3074-1DB2-3B0F-3ED0AB04DD43"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F5CA49D7-9C8A-8896-F766-4085C5D1CF3F" name="IX_AMANAJE_USUARIO_DEL_POR">
+<ind_PK_UK id="F5CA49D7-9C8A-8896-F766-4085C5D1CF3F" name="IX_AMANAJE_USU_DEL_POR">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -244,7 +244,7 @@
 <colUsage columnID="F839A458-E7C0-8ECD-3DA5-FC22DD617AE9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E71064C1-9979-4681-60D9-06A78DFEC228" name="FK_USUARIO_CLIENTE">
+<ind_PK_UK id="E71064C1-9979-4681-60D9-06A78DFEC228" name="FK_USU_CLI">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -254,7 +254,7 @@
 <colUsage columnID="F0283D93-3074-1DB2-3B0F-3ED0AB04DD43"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8305D8F0-8FB5-E81B-9686-36283A3D65CD" name="FK_USUARIO_DELETADO_POR">
+<ind_PK_UK id="8305D8F0-8FB5-E81B-9686-36283A3D65CD" name="FK_USU_DEL_POR">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -266,7 +266,7 @@
 </ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
-<tableCheckConstraint name="CK_AMANAJE_USUARIO_PERFIL" directorySegmentName="seg_0" id="01F88FE4-18FD-95BE-C9BB-C36187646668">
+<tableCheckConstraint name="CK_AMANAJE_USU_PERFIL" directorySegmentName="seg_0" id="01F88FE4-18FD-95BE-C9BB-C36187646668">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -274,15 +274,15 @@
 <importedID>07C58C4C-BB48-34CC-161E-1E56F6FA1FD6</importedID>
 <rule><![CDATA[TP_PERFIL IN ('ADMINISTRADOR', 'OPERADOR', 'ANALISTA', 'VISUALIZADOR')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_USUARIO_STATUS" directorySegmentName="seg_0" id="04864164-185B-B125-415A-232FBCAD4926">
+<tableCheckConstraint name="CK_AMANAJE_USU_STATUS" directorySegmentName="seg_0" id="04864164-185B-B125-415A-232FBCAD4926">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>21DAEA1F-B14C-A749-CA0F-7555F91C3529</importedID>
-<rule><![CDATA[ST_USUARIO IN ('ATIVO', 'BLOQUEADO', 'PENDENTE', 'INATIVO')]]></rule>
+<rule><![CDATA[ST_USU IN ('ATIVO', 'BLOQUEADO', 'PENDENTE', 'INATIVO')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_USUARIO_ATIVO" directorySegmentName="seg_0" id="D25702B0-1E50-11E6-0F81-C40CBF38D878">
+<tableCheckConstraint name="CK_AMANAJE_USU_ATIVO" directorySegmentName="seg_0" id="D25702B0-1E50-11E6-0F81-C40CBF38D878">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -290,13 +290,13 @@
 <importedID>1834357E-F2EE-E5A4-671E-F89C76C2ECE2</importedID>
 <rule><![CDATA[ST_ATIVO IN ('S', 'N')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_USUARIO_DEL" directorySegmentName="seg_0" id="AE62C840-30EA-8354-616E-519755C01DDD">
+<tableCheckConstraint name="CK_AMANAJE_USU_DEL" directorySegmentName="seg_0" id="AE62C840-30EA-8354-616E-519755C01DDD">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>AF6A9552-B836-7301-1A14-8120088140BB</importedID>
-<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DELETADO_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
+<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DEL_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>

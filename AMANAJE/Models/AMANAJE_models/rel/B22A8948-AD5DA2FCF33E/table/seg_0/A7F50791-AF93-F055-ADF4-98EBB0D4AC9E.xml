@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7F50791-AF93-F055-ADF4-98EBB0D4AC9E" name="TB_AMANAJE_INDICADOR_REGIONAL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7F50791-AF93-F055-ADF4-98EBB0D4AC9E" name="TB_AMANAJE_IND_REG">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -179,7 +179,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6DEEECB3-6BC6-A2AB-0132-A5FEF8740B28" name="PK_AMANAJE_INDICADOR">
+<ind_PK_UK id="6DEEECB3-6BC6-A2AB-0132-A5FEF8740B28" name="PK_AMANAJE_IND">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -192,7 +192,7 @@
 <colUsage columnID="301DB51A-E6D8-14D4-A306-F8914B758EFE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C41E7C63-66AD-DA99-9D2C-1639DFF07781" name="IX_AMANAJE_INDICADOR_REGIAO">
+<ind_PK_UK id="C41E7C63-66AD-DA99-9D2C-1639DFF07781" name="IX_AMANAJE_IND_REGIAO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -203,7 +203,7 @@
 <colUsage columnID="0B5048F1-04B2-D38D-7901-DF01F9F60D44"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="27798E5F-51BB-93CC-85C0-D25862B0262F" name="IX_AMANAJE_INDICADOR_LOCAL">
+<ind_PK_UK id="27798E5F-51BB-93CC-85C0-D25862B0262F" name="IX_AMANAJE_IND_LOCAL">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -215,7 +215,7 @@
 <colUsage columnID="79B3A4DF-E13B-7554-A4C9-6C8318CE300F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5A4014A9-0442-2F21-9C7E-643C59E10914" name="IX_AMANAJE_INDICADOR_TIPO">
+<ind_PK_UK id="5A4014A9-0442-2F21-9C7E-643C59E10914" name="IX_AMANAJE_IND_TIPO">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -227,7 +227,7 @@
 <colUsage columnID="C8665629-CB9E-5E38-CD0A-DB3A86FA87C8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0CCB08DC-7A9D-AEC4-8D08-136C6D5D8499" name="FK_INDICADOR_REGIAO">
+<ind_PK_UK id="0CCB08DC-7A9D-AEC4-8D08-136C6D5D8499" name="FK_IND_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -239,7 +239,7 @@
 </ind_PK_UK>
 </indexes>
 <tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_ESTADO" directorySegmentName="seg_0" id="C74BB15E-25AD-7E02-407F-3CD0EAD2BB07">
+<tableCheckConstraint name="CK_AMANAJE_IND_ESTADO" directorySegmentName="seg_0" id="C74BB15E-25AD-7E02-407F-3CD0EAD2BB07">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -247,7 +247,7 @@
 <importedID>85F46C5E-CF70-BEED-6793-D16CDBAA7C00</importedID>
 <rule><![CDATA[REGEXP_LIKE(SG_ESTADO, '^[A-Z]{2}$')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_TIPO" directorySegmentName="seg_0" id="CAB1A588-ACEB-58AC-C8EA-964DC2FC035F">
+<tableCheckConstraint name="CK_AMANAJE_IND_TIPO" directorySegmentName="seg_0" id="CAB1A588-ACEB-58AC-C8EA-964DC2FC035F">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -255,7 +255,7 @@
 <importedID>8BAF375F-0D32-B2D1-5D5F-5396C01E6B8A</importedID>
 <rule><![CDATA[TP_RISCO IN ('ENCHENTE', 'DESLIZAMENTO', 'TEMPESTADE', 'QUALIDADE_AR')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_SCORE" directorySegmentName="seg_0" id="D83C15CB-1918-07FD-1C24-5438F232A589">
+<tableCheckConstraint name="CK_AMANAJE_IND_SCORE" directorySegmentName="seg_0" id="D83C15CB-1918-07FD-1C24-5438F232A589">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -263,7 +263,7 @@
 <importedID>744FA518-659E-9CEB-43E6-7A6CBCC0CE24</importedID>
 <rule><![CDATA[NR_SCORE_MEDIO BETWEEN 0 AND 100]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_NIVEL" directorySegmentName="seg_0" id="B3C8DF86-186C-DC70-8E3A-BCC2DFC8145D">
+<tableCheckConstraint name="CK_AMANAJE_IND_NIVEL" directorySegmentName="seg_0" id="B3C8DF86-186C-DC70-8E3A-BCC2DFC8145D">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -271,7 +271,7 @@
 <importedID>2063723A-54FE-0D8C-5AC1-3ACB7375ACF7</importedID>
 <rule><![CDATA[TP_NIVEL_RISCO_MEDIO IN ('BAIXO', 'MODERADO', 'ALTO', 'CRITICO')]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_EST" directorySegmentName="seg_0" id="085B0143-5718-1D05-7B95-FCF5D665FE62">
+<tableCheckConstraint name="CK_AMANAJE_IND_EST" directorySegmentName="seg_0" id="085B0143-5718-1D05-7B95-FCF5D665FE62">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -279,7 +279,7 @@
 <importedID>06C1E68B-EAA2-BF52-45DF-AA47C19FE5E8</importedID>
 <rule><![CDATA[QT_ESTACOES >= 0]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_ALT" directorySegmentName="seg_0" id="C8623C4C-1C0D-60A3-D55E-FE7601C34A72">
+<tableCheckConstraint name="CK_AMANAJE_IND_ALT" directorySegmentName="seg_0" id="C8623C4C-1C0D-60A3-D55E-FE7601C34A72">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -287,7 +287,7 @@
 <importedID>CCDA0B4E-AFA4-F596-A871-47F6E091B08C</importedID>
 <rule><![CDATA[QT_ALERTAS_ATIVOS >= 0]]></rule>
 </tableCheckConstraint>
-<tableCheckConstraint name="CK_AMANAJE_INDICADOR_SCORE_NIVEL" directorySegmentName="seg_0" id="1A074BF6-B0DB-8C93-064F-179A8DCA8CF3">
+<tableCheckConstraint name="CK_AMANAJE_IND_SCORE_NIV" directorySegmentName="seg_0" id="1A074BF6-B0DB-8C93-064F-179A8DCA8CF3">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>

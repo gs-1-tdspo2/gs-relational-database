@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3437C17-C8D6-6501-4E4A-9DEAEDA108A5" name="TB_AMANAJE_REGIAO_MONITORADA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3437C17-C8D6-6501-4E4A-9DEAEDA108A5" name="TB_AMANAJE_REGIAO_MONIT">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -120,7 +120,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NR_NIVEL_VULNERABILIDADE" id="D7276120-4D2C-AEF4-9729-0D2DCC4596B6">
+<Column name="NR_NIVEL_VULN" id="D7276120-4D2C-AEF4-9729-0D2DCC4596B6">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -133,7 +133,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TP_VISIBILIDADE" id="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E">
+<Column name="TP_VISIB" id="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -189,7 +189,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_DELETADO_EM" id="596381AF-DE78-E213-D7CC-497ECFECA2EA">
+<Column name="DT_DEL_EM" id="596381AF-DE78-E213-D7CC-497ECFECA2EA">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -203,7 +203,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_DELETADO_POR" id="1AB4682C-57DF-33E0-EBD5-4BB7AB7D6E87">
+<Column name="ID_DEL_POR" id="1AB4682C-57DF-33E0-EBD5-4BB7AB7D6E87">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -249,7 +249,7 @@
 <colUsage columnID="F93DC423-72F2-4492-6D4B-B95E66D5C79A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="42D0D6C0-5A83-0B82-76E4-153344D2EB87" name="UQ_AMANAJE_REGIAO_CLIENTE_NOME">
+<ind_PK_UK id="42D0D6C0-5A83-0B82-76E4-153344D2EB87" name="UQ_AMANAJE_REGIAO_CLI_NOME">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -262,7 +262,7 @@
 <colUsage columnID="99D23660-95E1-9135-7C2D-A98261789B04"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BFC16ED2-509B-C066-E267-1B5458793A39" name="IX_AMANAJE_REGIAO_CLIENTE">
+<ind_PK_UK id="BFC16ED2-509B-C066-E267-1B5458793A39" name="IX_AMANAJE_REGIAO_CLI">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -307,7 +307,7 @@
 <colUsage columnID="93B7E1F2-193B-DF32-4A92-A376C1E9AB0E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EB19631B-44B5-3401-690E-6AAE9F008891" name="FK_REGIAO_CLIENTE">
+<ind_PK_UK id="EB19631B-44B5-3401-690E-6AAE9F008891" name="FK_REGIAO_CLI">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -317,7 +317,7 @@
 <colUsage columnID="B4E88BA6-1309-D34B-6730-25449B0652CE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="86AE5D58-6EB0-2F44-A8CE-5EAD3A904DC6" name="FK_REGIAO_DELETADO_POR">
+<ind_PK_UK id="86AE5D58-6EB0-2F44-A8CE-5EAD3A904DC6" name="FK_REGIAO_DEL_POR">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -367,7 +367,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>3856FF28-4877-0A1A-3272-517CBB5609BD</importedID>
-<rule><![CDATA[NR_NIVEL_VULNERABILIDADE BETWEEN 0 AND 100]]></rule>
+<rule><![CDATA[NR_NIVEL_VULN BETWEEN 0 AND 100]]></rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="CK_AMANAJE_REGIAO_VISIB" directorySegmentName="seg_0" id="44758E69-E6B1-A763-7747-A06E6F954226">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
@@ -375,7 +375,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>3FA0C18B-F7B4-4257-C088-32ED35326B18</importedID>
-<rule><![CDATA[TP_VISIBILIDADE IN ('PRIVADA', 'INSTITUCIONAL', 'AGREGADA_PUBLICA')]]></rule>
+<rule><![CDATA[TP_VISIB IN ('PRIVADA', 'INSTITUCIONAL', 'AGREGADA_PUBLICA')]]></rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="CK_AMANAJE_REGIAO_ATIVO" directorySegmentName="seg_0" id="665A7D8E-0F9F-A569-A45C-8970F940E4D7">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
@@ -391,7 +391,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>C362F55B-95E1-2C3E-B060-0E723E9269EC</importedID>
-<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DELETADO_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
+<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DEL_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>

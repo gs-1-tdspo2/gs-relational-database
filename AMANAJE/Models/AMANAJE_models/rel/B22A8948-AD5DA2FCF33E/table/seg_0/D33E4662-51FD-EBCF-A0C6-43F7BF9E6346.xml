@@ -111,7 +111,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_RECOMENDACAO" id="7A57C764-1BA6-4FB0-DFA8-20D327CA4F4B">
+<Column name="DS_RECOM" id="7A57C764-1BA6-4FB0-DFA8-20D327CA4F4B">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -208,7 +208,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_DELETADO_EM" id="96FBF90E-B591-3C62-4DD4-52ACA13BB872">
+<Column name="DT_DEL_EM" id="96FBF90E-B591-3C62-4DD4-52ACA13BB872">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -222,7 +222,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_DELETADO_POR" id="B76EBC7C-5152-4855-81CB-792875E8A5D4">
+<Column name="ID_DEL_POR" id="B76EBC7C-5152-4855-81CB-792875E8A5D4">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -279,7 +279,7 @@
 <colUsage columnID="AADE467E-499A-846D-DBF4-EA5B8FE8C964"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9FCB5F70-985B-68B3-2690-290958AB9861" name="IX_AMANAJE_ALERTA_AVALIACAO">
+<ind_PK_UK id="9FCB5F70-985B-68B3-2690-290958AB9861" name="IX_AMANAJE_ALERTA_AVAL">
 <sourceDDLFile>model_ddl.sql</sourceDDLFile>
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
@@ -313,7 +313,7 @@
 <colUsage columnID="7647B967-A772-27EA-DE27-A5E41277DA02"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="73BA7C82-4C02-5806-1953-4E16CB8E162E" name="FK_ALERTA_AVALIACAO_REGIAO">
+<ind_PK_UK id="73BA7C82-4C02-5806-1953-4E16CB8E162E" name="FK_ALERTA_AVAL_REGIAO">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -324,7 +324,7 @@
 <colUsage columnID="AADE467E-499A-846D-DBF4-EA5B8FE8C964"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BAB32038-0E97-D51C-D46B-B39A79F6B31E" name="FK_ALERTA_DELETADO_POR">
+<ind_PK_UK id="BAB32038-0E97-D51C-D46B-B39A79F6B31E" name="FK_ALERTA_DEL_POR">
 <createdBy>lucca</createdBy>
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
@@ -392,7 +392,7 @@
 <createdTime>2026-06-01 14:24:39 UTC</createdTime>
 <ownerDesignName>AMANAJE_models</ownerDesignName>
 <importedID>ECBE1773-92C3-0C04-E14B-1F58745B57A5</importedID>
-<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DELETADO_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
+<rule><![CDATA[(ST_ATIVO = 'S' AND DT_DEL_EM IS NULL) OR (ST_ATIVO = 'N')]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>
