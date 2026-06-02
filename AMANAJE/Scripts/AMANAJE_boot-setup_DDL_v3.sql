@@ -709,5 +709,4 @@ FIM DO SCRIPT
    13 Tabelas                       (TB_AMANAJE_*)
    21 Índices únicos implícitos     ('PK' e 'UNIQUE' constraints)
    35 Índices explícitos            (IX_AMANAJE_*)
-    0 Índices únicos explícitos
 */
