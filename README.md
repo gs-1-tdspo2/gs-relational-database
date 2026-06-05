@@ -51,7 +51,7 @@ AMANAJE/
 │    └── AMANAJE_models.dmd (Construtor do modelo Oracle DM)
 ├── Scripts/
 │    ├── AMANAJE_boot-setup_DDL_v3.sql (Scripts DDL — criação do schema)
-│    ├── AMANAJE_seed_DML_v4.sql (Scripts DML — procedures de carga e dados de teste)
+│    ├── AMANAJE_seed_DML_v3.sql (Scripts DML — procedures de carga e dados de teste)
 │    └── AMANAJE_tests_DQL_v1.sql (Scripts DQL — relatórios e testes de consulta)
 └── README.md (Este arquivo)
 ```
@@ -162,7 +162,7 @@ ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
 | `# 1` | 13 `CREATE TABLE` com constraints (PK, FK, UQ, CHECK) e `COMMENT ON TABLE / COLUMN` |
 | `# 2` | 35 `CREATE INDEX` explícitos não-únicos |
 
-### `AMANAJE_seed_DML_v4.sql`
+### `AMANAJE_seed_DML_v3.sql`
 
 | Seção | Conteúdo |
 |:------|:---------|
