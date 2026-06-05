@@ -41,19 +41,22 @@ Turma: `2TDSPO` · FIAP - Unidade Paulista · 2026
 ## Estrutura do Repositório
 
 ```
-AMANAJE/
-├── Docs/
-│    ├── AMANAJE_Documentacao_BD.pdf (Documentação técnica completa)
-│    ├── AMANAJE_Logical.pdf (Modelo Lógico do AMANAJÉ)
-│    └── AMANAJE_Relational.pdf (Modelo Físico do AMANAJÉ)
-├── Models/
-│    ├── AMANAJE_models/ (Arquivos de referência do DMD)
-│    └── AMANAJE_models.dmd (Construtor do modelo Oracle DM)
-├── Scripts/
-│    ├── AMANAJE_boot-setup_DDL_v3.sql (Scripts DDL — criação do schema)
-│    ├── AMANAJE_seed_DML_v3.sql (Scripts DML — procedures de carga e dados de teste)
-│    └── AMANAJE_tests_DQL_v1.sql (Scripts DQL — relatórios e testes de consulta)
-└── README.md (Este arquivo)
+gs-relational-database/
+├── integrantes.txt (Integrantes oficiais da equipe)
+├── README.md (Este arquivo)
+└── AMANAJE/
+    ├── Docs/
+    │   ├── AMANAJE_Dicionario-de-Dados.pdf (Dicionário de dados completo)
+    │   ├── AMANAJE_Documentacao_BD.docx (Documentação técnica completa)
+    │   ├── AMANAJE_Logical.pdf (Modelo Lógico do AMANAJÉ)
+    │   └── AMANAJE_Relational.pdf (Modelo Físico do AMANAJÉ)
+    ├── Models/
+    │   ├── AMANAJE_models/ (Arquivos de referência do DMD)
+    │   └── AMANAJE_models.dmd (Construtor do modelo Oracle DM)
+    └── Scripts/
+        ├── AMANAJE_boot-setup_DDL_v3.sql (Scripts DDL — criação do schema)
+        ├── AMANAJE_seed_DML_v3.sql (Scripts DML — procedures de carga e dados de teste)
+        └── AMANAJE_tests_DQL_v1.sql (Scripts DQL — relatórios e testes de consulta)
 ```
 
 ---
